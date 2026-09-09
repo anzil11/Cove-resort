@@ -26,11 +26,13 @@ import coveAerialNight from '../assets/images/cove_aerial_night_1786990367663.jp
 
 interface AboutPageProps {
   onNavigate: (page: PageId) => void;
+  onOpenBrochure: () => void;
   onOpenBooking: () => void;
 }
 
 export const AboutPage: React.FC<AboutPageProps> = ({
   onNavigate,
+  onOpenBrochure,
   onOpenBooking
 }) => {
   return (
@@ -59,7 +61,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
           </h1>
 
           <p className="font-sans-ui text-sm sm:text-base md:text-lg text-[#d0d0d4] max-w-2xl mx-auto mt-6 font-light leading-relaxed">
-            Perched at 700 meters above sea level in Old Vythiri, The Cove Lakkidi was conceived as an organic continuation of Wayanad’s misty rainforest canopy.
+            Perched at 700 meters above sea level in Lakkidi The Cove Lakkidi was conceived as an organic continuation of Wayanad’s misty rainforest canopy.
           </p>
 
           <div className="flex items-center justify-center gap-2 font-sans-ui text-xs text-[#ffe088] mt-6 tracking-widest uppercase">
@@ -83,7 +85,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 Crafted with Mountain Stone &amp; Treated Pine Timber
               </h2>
               <p className="font-sans-ui text-sm sm:text-base text-[#5f5e5b] leading-relaxed font-light">
-                Built to withstand the torrential monsoon downpours of Lakkidi—one of the wettest high-altitude corridors in India—our iconic A-frame architecture features steeply pitched rooflines that gracefully shed the rain while creating soaring, light-filled interior attic spaces.
+                Built to withstand the torrential monsoon downpours of Lakkidi—one of the wettest high-altitude corridors in India—our iconic A-Framedd architecture features steeply pitched rooflines that gracefully shed the rain while creating soaring, light-filled interior attic spaces.
               </p>
               <p className="font-sans-ui text-sm sm:text-base text-[#5f5e5b] leading-relaxed font-light">
                 Rather than altering the land’s topography, the estate was sculpted around the natural flowing mountain stream that wraps the property. Crystal-clear water, filtered through ancient rainforest bedrock, supplies our natural bathing pools and creates a soothing acoustic tapestry day and night.
@@ -111,7 +113,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               <div className="aspect-[4/3] sm:aspect-[16/11] overflow-hidden border border-[#e4e2e0] ambient-shadow">
                 <img
                   src={coveAframeTwilight}
-                  alt="A-Frame Villa Frontage"
+                  alt="A-Framedd Villas Frontage"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -153,7 +155,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               </div>
               <h3 className="font-display text-xl text-[#1b1c1b]">Attached Natural Stream</h3>
               <p className="font-sans-ui text-xs text-[#5f5e5b] leading-relaxed">
-                Step right from the villa terrace into cool, shallow natural stream pools. Refresh your senses with chemical-free mountain spring water.
+                Step right from the Villas terrace into cool, shallow natural stream pools. Refresh your senses with chemical-free mountain spring water.
               </p>
             </div>
 
@@ -207,10 +209,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({
             </div>
 
             <button
-              onClick={onOpenBooking}
-              className="px-6 py-3 bg-[#000101] text-[#ffffff] text-xs font-sans-ui font-semibold uppercase tracking-widest hover:bg-[#30302f] transition-all flex items-center gap-2 self-start md:self-auto cursor-pointer"
+              onClick={onOpenBrochure}
+              className="px-6 py-3 bg-[#ffffff] border border-[#e4e2e0] text-[#1b1c1b] text-xs font-sans-ui font-semibold uppercase tracking-widest hover:bg-[#f5f3f1] transition-all flex items-center gap-2 self-start md:self-auto"
             >
-              <span>Check Availability</span>
+              <BookOpen className="w-4 h-4 text-[#735c00]" />
+              <span>Official PDF Brochure</span>
             </button>
           </div>
 
@@ -238,7 +241,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
         </div>
       </section>
 
-      {/* Section 4: Wayanad & Old Vythiri Cultural Lore */}
+      {/* Section 4: Wayanad & Vythiri Cultural Lore */}
       <section className="py-20 md:py-28 bg-[#1b1c1b] text-[#ffffff]">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -247,13 +250,13 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 Local History &amp; Geography
               </span>
               <h2 className="font-display text-3xl sm:text-5xl text-[#ffffff] font-normal leading-tight">
-                Old Vythiri &amp; The Gateway to Wayanad
+                Vythiri &amp; The Gateway to Wayanad
               </h2>
               <p className="font-sans-ui text-sm sm:text-base text-[#c5c6ca] leading-relaxed font-light">
-                Lakkidi sits at the crest of the Thamarassery Ghat, serving as the dramatic high-altitude entryway to Wayanad. Just 500 meters from our villa stands the legendary <strong>Chain Tree</strong>—a giant ficus bound by heavy iron chains that commemorates Karinthandan, the tribal youth whose ancestral knowledge first revealed the secret pass across the Western Ghats.
+                Lakkidi sits at the crest of the Thamarassery Ghat, serving as the dramatic high-altitude entryway to Wayanad. Just 500 meters from our Villas stands the legendary <strong>Chain Tree</strong>—a giant ficus bound by heavy iron chains that commemorates Karinthandan, the tribal youth whose ancestral knowledge first revealed the secret pass across the Western Ghats.
               </p>
               <p className="font-sans-ui text-sm sm:text-base text-[#c5c6ca] leading-relaxed font-light">
-                Today, Old Vythiri retains its quiet, secluded plantation heritage, protected from urban clutter and blessed with year-round cool temperatures, wild bird species, and lush cardamom groves.
+                Today, Vythiri retains its quiet, secluded plantation heritage, protected from urban clutter and blessed with year-round cool temperatures, wild bird species, and lush cardamom groves.
               </p>
 
               <div className="pt-2">
@@ -273,7 +276,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 <div className="space-y-3 font-sans-ui text-xs text-[#c5c6ca]">
                   <div className="flex justify-between py-2 border-b border-[#50504f]">
                     <span>Location</span>
-                    <span className="font-semibold text-[#ffffff]">Old Vythiri, Lakkidi</span>
+                    <span className="font-semibold text-[#ffffff]">Lakkidi</span>
                   </div>
                   <div className="flex justify-between py-2 border-b border-[#50504f]">
                     <span>District</span>
@@ -303,7 +306,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
         <div className="max-w-2xl mx-auto px-4 space-y-4">
           <h3 className="font-display text-3xl text-[#1b1c1b]">Experience The Cove Firsthand</h3>
           <p className="font-sans-ui text-xs sm:text-sm text-[#5f5e5b]">
-            Reserve your wooden suite or the entire 4-bedroom villa for your upcoming holiday.
+            Reserve your wooden suite or the entire 8-bedroom Villas for your upcoming holiday.
           </p>
           <div className="flex justify-center gap-4 pt-2">
             <button

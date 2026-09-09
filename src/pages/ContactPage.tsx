@@ -144,7 +144,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 <Mail className="w-5 h-5" />
               </div>
               <h3 className="font-display text-lg text-[#1b1c1b]">Email Inquiries</h3>
-              <p className="font-sans-ui text-xs text-[#5f5e5b]">For corporate retreats, full villa buyouts, and photo shoots.</p>
+              <p className="font-sans-ui text-xs text-[#5f5e5b]">For corporate retreats, full Villas buyouts, and photo shoots.</p>
               <a
                 href={`mailto:${RESORT_INFO.email}`}
                 className="inline-block font-sans-ui text-xs font-bold text-[#1b1c1b] hover:text-[#735c00] truncate max-w-full"
@@ -160,10 +160,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               </div>
               <h3 className="font-display text-lg text-[#1b1c1b]">Sanctuary Address</h3>
               <p className="font-sans-ui text-xs text-[#5f5e5b] leading-relaxed">
-                Old Vythiri, Lakkidi, Wayanad, Kerala 673576, India
+                Lakkidi, Wayanad, Kerala 673576, India
               </p>
               <span className="inline-block font-sans-ui text-[11px] text-[#735c00] font-semibold">
-                700m Altitude • 200m from Teenzania Park
+                700m Altitude • 200m from Tanzania Park
               </span>
             </div>
           </div>
@@ -312,7 +312,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                         <option value="4 Guests">4 Guests</option>
                         <option value="6 Guests">6 Guests</option>
                         <option value="8 Guests">8 Guests</option>
-                        <option value="12+ (Entire Villa)">12+ (Entire Villa)</option>
+                        <option value="12+ (Entire Villas)">12+ (Entire Villas)</option>
                       </select>
                     </div>
                   </div>
@@ -422,7 +422,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 <span className="font-sans-ui text-xs uppercase tracking-[0.25em] text-[#735c00] font-semibold block">
                   Immediate Proximity
                 </span>
-                <h3 className="font-display text-xl text-[#1b1c1b]">Landmarks from Villa</h3>
+                <h3 className="font-display text-xl text-[#1b1c1b]">Landmarks from Villas</h3>
 
                 <div className="space-y-2.5 font-sans-ui text-xs">
                   <div className="flex justify-between py-1.5 border-b border-[#e4e2e0]">
@@ -442,7 +442,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                     <span className="text-[#735c00] font-bold">2.5 Km</span>
                   </div>
                   <div className="flex justify-between py-1.5">
-                    <span className="text-[#1b1c1b] font-medium">En Ooru Tribal Village</span>
+                    <span className="text-[#1b1c1b] font-medium">En Ooru Tribal Villasge</span>
                     <span className="text-[#735c00] font-bold">3.5 Km</span>
                   </div>
                 </div>

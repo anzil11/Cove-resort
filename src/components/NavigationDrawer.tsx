@@ -4,10 +4,14 @@ import {
   Home, 
   Bed, 
   Compass, 
+  Sparkles, 
   Image as ImageIcon, 
   Phone, 
   MessageSquare, 
+  FileText, 
   MapPin, 
+  TreePine,
+  Waves,
   Info
 } from 'lucide-react';
 import { RESORT_INFO } from '../data/resortData';
@@ -20,6 +24,7 @@ interface NavigationDrawerProps {
   currentPage: PageId;
   onNavigate: (page: PageId) => void;
   onOpenBooking: () => void;
+  onOpenBrochure: () => void;
 }
 
 export const NavigationDrawer: React.FC<NavigationDrawerProps> = ({
@@ -27,7 +32,8 @@ export const NavigationDrawer: React.FC<NavigationDrawerProps> = ({
   onClose,
   currentPage,
   onNavigate,
-  onOpenBooking
+  onOpenBooking,
+  onOpenBrochure
 }) => {
   const handleItemClick = (page: PageId) => {
     onNavigate(page);
@@ -156,6 +162,30 @@ export const NavigationDrawer: React.FC<NavigationDrawerProps> = ({
               <span>Contact &amp; Map</span>
             </button>
           </nav>
+
+          {/* Quick PDF Brochure trigger */}
+          <div className="mt-6 p-4 bg-[#f5f3f1] border border-[#e4e2e0]">
+            <div className="flex items-start gap-3">
+              <FileText className="w-5 h-5 text-[#735c00] mt-0.5" />
+              <div>
+                <h4 className="font-sans-ui text-xs font-semibold uppercase tracking-wider text-[#1b1c1b]">
+                  The Cove Official PDF
+                </h4>
+                <p className="text-xs text-[#5f5e5b] mt-0.5">
+                  Complete brochure with room details &amp; attraction distances.
+                </p>
+                <button
+                  onClick={() => {
+                    onClose();
+                    onOpenBrochure();
+                  }}
+                  className="mt-2 text-xs font-semibold text-[#000101] border-b border-[#000101] pb-0.5 hover:text-[#735c00] transition-colors cursor-pointer"
+                >
+                  View PDF Details &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Bottom: Direct Actions */}

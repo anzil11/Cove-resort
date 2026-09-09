@@ -24,7 +24,7 @@ export const generateWhatsAppLink = (
   message += `I would like to enquire about a reservation at your stream side sanctuary:\n\n`;
 
   if (details.roomName) {
-    message += `🏡 *Room / Villa:* ${details.roomName}\n`;
+    message += `🏡 *Room / Villas:* ${details.roomName}\n`;
   }
   if (details.checkIn && details.checkOut) {
     message += `📅 *Dates:* ${details.checkIn} to ${details.checkOut}\n`;

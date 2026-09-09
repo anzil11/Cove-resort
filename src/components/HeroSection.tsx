@@ -41,7 +41,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=2000&q=85"
-          alt="The Cove Lakkidi stream side luxury A-frame villa in Wayanad"
+          alt="The Cove Lakkidi stream side luxury A-Framedd Villas in Wayanad"
           className="w-full h-full object-cover object-center filter brightness-90 md:brightness-85 scale-105 transition-transform duration-10000 ease-out"
         />
         {/* Editorial Gradients for Legibility */}
@@ -73,7 +73,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </h1>
 
         <p className="font-sans-ui text-base sm:text-lg md:text-xl text-[#f2f0ee] max-w-2xl mx-auto font-light leading-relaxed mb-8 drop-shadow-md">
-          An exclusive sanctuary where luxury meets untamed nature. Stream Side 4-Bedroom A-Frame Villa, natural running water, wooden A/C suites, and misty mountain calm.
+          An exclusive sanctuary where luxury meets untamed nature. Stream Side 8 A-Framedd Villas, natural running water, wooden A/C suites, and misty mountain calm.
         </p>
 
         {/* CTA Buttons */}
@@ -82,7 +82,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             onClick={onExploreRooms}
             className="bg-[#ffffff] text-[#000101] font-sans-ui text-xs font-semibold uppercase tracking-[0.2em] px-8 py-4 hover:bg-[#ffe088] transition-all duration-300 shadow-lg cursor-pointer"
           >
-            Explore Suites &amp; Villa
+            Explore Suites &amp; Villas
           </button>
 
           <a
@@ -163,7 +163,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   <option value={4}>4 Guests</option>
                   <option value={6}>6 Guests</option>
                   <option value={8}>8 Guests</option>
-                  <option value={12}>12+ (Full Villa)</option>
+                  <option value={12}>12+ (Full Villas)</option>
                 </select>
                 <span className="text-xs font-serif text-[#735c00] font-bold">
                   {formatCurrency(currentRoom.priceINR, currency)}
@@ -183,10 +183,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* Quick PDF Highlights ticker below search */}
           <div className="mt-4 pt-3 border-t border-[#e4e2e0] flex flex-wrap items-center justify-between gap-y-2 text-[11px] font-sans-ui text-[#5f5e5b]">
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#735c00]" />
-              <span>Complimentary Breakfast &amp; Welcome Drink</span>
-            </div>
+              <span>Complimentary Breakfast(on-request) &amp; Welcome Drink</span>
+            </div> */}
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#735c00]" />
               <span>Free High-Speed Wi-Fi &amp; Pet Friendly</span>

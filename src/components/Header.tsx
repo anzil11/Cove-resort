@@ -6,6 +6,9 @@ import { PageId } from '../types';
 interface HeaderProps {
   onOpenDrawer: () => void;
   onOpenBooking: () => void;
+  onOpenBrochure?: () => void;
+  currency?: 'INR' | 'USD';
+  onToggleCurrency?: () => void;
   currentPage: PageId;
   onNavigate: (page: PageId) => void;
 }

@@ -56,6 +56,12 @@ export const RoomCard: React.FC<RoomCardProps> = ({
             </span>
           )}
         </div>
+
+        <div className="absolute bottom-3 right-4">
+          <span className="bg-[#000101]/80 backdrop-blur-md text-[#ffffff] text-xs font-sans-ui px-2.5 py-1">
+            {room.space}
+          </span>
+        </div>
       </div>
 
       {/* Card Body */}
@@ -63,7 +69,7 @@ export const RoomCard: React.FC<RoomCardProps> = ({
         <div>
           <div className="flex items-baseline justify-between mb-2">
             <span className="text-[10px] font-sans-ui uppercase tracking-[0.2em] text-[#735c00] font-semibold">
-              {room.isEntireVilla ? 'Exclusive Buyout' : 'Private Suite'}
+              {room.isEntireVillas ? 'Exclusive Buyout' : 'Private Suite'}
             </span>
             <span className="text-xs text-[#5f5e5b] font-sans-ui">
               {room.capacity}

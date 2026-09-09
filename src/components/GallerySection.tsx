@@ -4,7 +4,7 @@ import { GALLERY_ITEMS } from '../data/resortData';
 import { GalleryItem } from '../types';
 
 export const GallerySection: React.FC = () => {
-  const [selectedFilter, setSelectedFilter] = useState<'all' | 'villa' | 'rooms' | 'stream' | 'dining' | 'nature'>('all');
+  const [selectedFilter, setSelectedFilter] = useState<'all' | 'Villas' | 'rooms' | 'stream' | 'dining' | 'nature'>('all');
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const filteredItems = GALLERY_ITEMS.filter((item) => {
@@ -51,7 +51,7 @@ export const GallerySection: React.FC = () => {
           <div className="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar">
             {[
               { id: 'all', label: 'All Photos' },
-              { id: 'villa', label: 'A-Frame Architecture' },
+              { id: 'Villas', label: 'A-Framedd Architecture' },
               { id: 'rooms', label: 'Suites & Interiors' },
               { id: 'stream', label: 'Natural Stream' },
               { id: 'nature', label: 'Campfire & Grounds' },

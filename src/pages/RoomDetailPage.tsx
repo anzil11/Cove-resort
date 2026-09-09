@@ -36,6 +36,7 @@ interface RoomDetailPageProps {
   room: Room;
   onNavigate: (page: PageId) => void;
   onSelectOtherRoom: (room: Room) => void;
+  onOpenBrochure: () => void;
   currency: 'INR' | 'USD';
   onToggleCurrency: () => void;
 }
@@ -44,6 +45,7 @@ export const RoomDetailPage: React.FC<RoomDetailPageProps> = ({
   room,
   onNavigate,
   onSelectOtherRoom,
+  onOpenBrochure,
   currency,
   onToggleCurrency
 }) => {
@@ -323,39 +325,34 @@ Please confirm availability and booking instructions.`;
                 </button>
               ))}
 
-              {/* Quick WhatsApp Concierge Card */}
-              <a
-                href={generateWhatsAppLink(RESORT_INFO.phone, {
-                  roomName: room.name,
-                  customMessage: `Hello The Cove Lakkidi, I am inquiring about rates and availability for ${room.name}.`
-                })}
-                target="_blank"
-                rel="noopener noreferrer"
+              {/* Quick Brochure Download Card */}
+              <div
+                onClick={onOpenBrochure}
                 className="col-span-2 p-4 bg-[#f5f3f1] border border-[#e4e2e0] flex items-center justify-between hover:bg-[#e4e2e0]/60 transition-colors cursor-pointer"
               >
                 <div className="flex items-center gap-3">
-                  <MessageSquare className="w-5 h-5 text-[#25D366]" />
+                  <BookOpen className="w-5 h-5 text-[#735c00]" />
                   <div>
                     <div className="font-sans-ui text-xs font-semibold uppercase text-[#1b1c1b]">
-                      Instant WhatsApp Inquiry
+                      PDF Brochure
                     </div>
                     <div className="text-[11px] text-[#5f5e5b]">
-                      Chat with resort concierge for best rates
+                      View official room floorplan &amp; tariff
                     </div>
                   </div>
                 </div>
                 <ArrowRight className="w-4 h-4 text-[#1b1c1b]" />
-              </a>
+              </div>
             </div>
           </div>
 
           {/* Quick Stats Strip */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-6 bg-[#ffffff] border border-[#e4e2e0] mb-12 shadow-xs">
             <div className="flex items-center gap-3 border-r border-[#e4e2e0] last:border-0 pr-4">
-              <Wind className="w-6 h-6 text-[#735c00] flex-shrink-0" />
+              <Maximize2 className="w-6 h-6 text-[#735c00] flex-shrink-0" />
               <div>
-                <span className="text-[10px] font-sans-ui uppercase tracking-wider text-[#5f5e5b] block">Climate</span>
-                <span className="font-semibold text-sm text-[#1b1c1b]">{room.acType}</span>
+                <span className="text-[10px] font-sans-ui uppercase tracking-wider text-[#5f5e5b] block">Total Space</span>
+                <span className="font-semibold text-sm text-[#1b1c1b]">{room.space}</span>
               </div>
             </div>
 
@@ -502,19 +499,19 @@ Please confirm availability and booking instructions.`;
                   ))}
 
                   {/* Resort Universal Inclusions */}
-                  <div className="p-5 bg-[#ffffff] border border-[#e4e2e0] flex items-start gap-3.5">
+                  {/* <div className="p-5 bg-[#ffffff] border border-[#e4e2e0] flex items-start gap-3.5">
                     <div className="p-2 bg-[#f5f3f1] text-[#735c00]">
                       <Coffee className="w-4 h-4" />
                     </div>
                     <div>
                       <h4 className="font-sans-ui text-xs sm:text-sm font-bold text-[#1b1c1b]">
-                        Complimentary Breakfast
+                        Complimentary Breakfast(on-request)
                       </h4>
                       <p className="font-sans-ui text-xs text-[#5f5e5b] mt-1">
                         Fresh Kerala breakfast served daily with local tea and fruits.
                       </p>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="p-5 bg-[#ffffff] border border-[#e4e2e0] flex items-start gap-3.5">
                     <div className="p-2 bg-[#f5f3f1] text-[#735c00]">
@@ -755,7 +752,7 @@ Please confirm availability and booking instructions.`;
                     </div>
 
                     {/* Guests Selectors */}
-                    {/* <div className="grid grid-cols-2 gap-3">
+                    <div className="grid grid-cols-2 gap-3">
                       <div>
                         <label className="block text-[10px] font-sans-ui uppercase tracking-wider text-[#5f5e5b] font-semibold mb-1">
                           Adults (12+ yrs)
@@ -789,16 +786,16 @@ Please confirm availability and booking instructions.`;
                           <option value={3}>3 Children</option>
                         </select>
                       </div>
-                    </div> */}
+                    </div>
 
                     {/* Experience Add-ons Checkboxes */}
-                    {/* <div> */}
-                      {/* <span className="block text-[10px] font-sans-ui uppercase tracking-wider text-[#5f5e5b] font-semibold mb-2">
+                    <div>
+                      <span className="block text-[10px] font-sans-ui uppercase tracking-wider text-[#5f5e5b] font-semibold mb-2">
                         Enhance Your Sanctuary Experience
                       </span>
                       <div className="space-y-2 bg-[#fbf9f7] p-3 border border-[#e4e2e0]">
-                        <label className="flex items-center justify-between text-xs font-sans-ui text-[#1b1c1b] cursor-pointer"> */}
-                          {/* <div className="flex items-center gap-2">
+                        <label className="flex items-center justify-between text-xs font-sans-ui text-[#1b1c1b] cursor-pointer">
+                          <div className="flex items-center gap-2">
                             <input
                               type="checkbox"
                               checked={includeCampfire}
@@ -806,11 +803,11 @@ Please confirm availability and booking instructions.`;
                               className="accent-[#735c00] w-3.5 h-3.5"
                             />
                             <span>🔥 Starlit Campfire &amp; Logs</span>
-                          </div> */}
-                          {/* <span className="text-[#735c00] font-semibold">+₹600</span>
-                        </label> */}
+                          </div>
+                          <span className="text-[#735c00] font-semibold">+₹600</span>
+                        </label>
 
-                        {/* <label className="flex items-center justify-between text-xs font-sans-ui text-[#1b1c1b] cursor-pointer">
+                        <label className="flex items-center justify-between text-xs font-sans-ui text-[#1b1c1b] cursor-pointer">
                           <div className="flex items-center gap-2">
                             <input
                               type="checkbox"
@@ -821,9 +818,9 @@ Please confirm availability and booking instructions.`;
                             <span>🍖 Live BBQ Grill &amp; Charcoal</span>
                           </div>
                           <span className="text-[#735c00] font-semibold">+₹800</span>
-                        </label> */}
+                        </label>
 
-                        {/* <label className="flex items-center justify-between text-xs font-sans-ui text-[#1b1c1b] cursor-pointer">
+                        <label className="flex items-center justify-between text-xs font-sans-ui text-[#1b1c1b] cursor-pointer">
                           <div className="flex items-center gap-2">
                             <input
                               type="checkbox"
@@ -834,9 +831,9 @@ Please confirm availability and booking instructions.`;
                             <span>🕯️ Candlelight Stream Dinner</span>
                           </div>
                           <span className="text-[#735c00] font-semibold">+₹1,200</span>
-                        </label> */}
-                      {/* </div>
-                    </div> */}
+                        </label>
+                      </div>
+                    </div>
 
                     {/* Guest Contact Information */}
                     <div className="space-y-2.5 pt-2 border-t border-[#e4e2e0]">
@@ -847,7 +844,7 @@ Please confirm availability and booking instructions.`;
                         <input
                           type="text"
                           required
-                          placeholder="e.g. Roy Mathew"
+                          placeholder="e.g. Anzil Ak"
                           value={fullName}
                           onChange={(e) => setFullName(e.target.value)}
                           className="w-full bg-[#fbf9f7] border border-[#e4e2e0] px-3 py-2 text-xs font-sans-ui text-[#1b1c1b] focus:outline-none focus:border-[#000101]"
@@ -910,7 +907,7 @@ Please confirm availability and booking instructions.`;
                         </div>
                       )}
                       <div className="flex justify-between text-[#1b7a34] font-semibold">
-                        <span>Complimentary Breakfast</span>
+                        <span>Complimentary Breakfast(on-request)</span>
                         <span>Included (₹0)</span>
                       </div>
                       <div className="pt-2 border-t border-[#e4e2e0] flex justify-between font-bold text-sm text-[#1b1c1b]">
@@ -921,13 +918,13 @@ Please confirm availability and booking instructions.`;
 
                     {/* Action Buttons */}
                     <div className="space-y-2.5 pt-2">
-                      {/* <button
+                      <button
                         type="submit"
                         className="w-full bg-[#000101] text-[#ffffff] font-sans-ui text-xs font-semibold uppercase tracking-[0.15em] py-3.5 hover:bg-[#30302f] transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-98 shadow-md"
                       >
                         <span className="material-symbols-outlined text-[16px]">calendar_month</span>
                         <span>Reserve &amp; Lock Dates</span>
-                      </button> */}
+                      </button>
 
                       <button
                         type="button"
@@ -964,7 +961,7 @@ Please confirm availability and booking instructions.`;
                 More Accommodations
               </span>
               <h2 className="font-display text-2xl sm:text-3xl text-[#1b1c1b]">
-                Explore Other Suites &amp; Villa Options
+                Explore Other Suites &amp; Villas Options
               </h2>
             </div>
 

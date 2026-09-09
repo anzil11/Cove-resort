@@ -16,10 +16,11 @@ import { NearbyPage } from './pages/NearbyPage';
 import { ContactPage } from './pages/ContactPage';
 import { Footer } from './components/Footer';
 import { RoomDetailModal } from './components/RoomDetailModal';
+import { BrochureModal } from './components/BrochureModal';
 import { BookingCalculatorModal } from './components/BookingCalculatorModal';
 import { Room, PageId } from './types';
 import { RESORT_INFO, ROOMS_DATA } from './data/resortData';
-import { MessageSquare } from 'lucide-react';
+import { MessageSquare, BookOpen } from 'lucide-react';
 import { generateWhatsAppLink } from './utils/helpers';
 
 export default function App() {
@@ -28,74 +29,44 @@ export default function App() {
   const [selectedRoomForDetail, setSelectedRoomForDetail] = useState<Room>(ROOMS_DATA[0]);
   const [isDetailModalOpen, setIsDetailModalOpen] = useState<boolean>(false);
   const [isBookingModalOpen, setIsBookingModalOpen] = useState<boolean>(false);
+  const [isBrochureModalOpen, setIsBrochureModalOpen] = useState<boolean>(false);
   const [bookingInitialRoom, setBookingInitialRoom] = useState<Room | null>(null);
   const [currency, setCurrency] = useState<'INR' | 'USD'>('INR');
 
-  // Route resolver helper: parses pathname and hash into clean page + room state
+  // Sync hash in URL with currentPage for direct bookmarking & browser back/forward
   useEffect(() => {
-    const resolveCurrentRoute = () => {
-      // Check pathname first (e.g. /about, /rooms, /room/villa-aframe)
-      let path = window.location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
-
-      // If pathname is empty or index.html, check hash (e.g. #/about, #about)
-      if (!path || path === 'index.html') {
-        const rawHash = window.location.hash.replace(/^#\/?/, '').replace(/\/+$/, '').toLowerCase();
-        if (rawHash) {
-          path = rawHash;
-        }
-      }
-
-      if (!path || path === 'home') {
-        setCurrentPage('home');
-        return;
-      }
-
-      const parts = path.split('/');
-      const mainSection = parts[0];
+    const handleHashChange = () => {
+      const rawHash = window.location.hash.replace('#/', '').replace('#', '');
+      const parts = rawHash.split('/');
+      const mainPath = parts[0]?.toLowerCase();
       const subParam = parts[1];
 
-      if (mainSection === 'room' || mainSection === 'room-detail' || (mainSection === 'rooms' && subParam)) {
-        const foundRoom = ROOMS_DATA.find((r) => r.id === (subParam || parts[1])) || ROOMS_DATA[0];
+      if (mainPath === 'room' || mainPath === 'room-detail' || (mainPath === 'rooms' && subParam)) {
+        const foundRoom = ROOMS_DATA.find((r) => r.id === subParam) || ROOMS_DATA[0];
         setSelectedRoomForDetail(foundRoom);
         setCurrentPage('room-detail');
-      } else if (['about', 'rooms', 'gallery', 'nearby', 'contact'].includes(mainSection)) {
-        setCurrentPage(mainSection as PageId);
-      } else {
-        setCurrentPage('home');
+      } else if (['home', 'about', 'rooms', 'gallery', 'nearby', 'contact'].includes(mainPath)) {
+        setCurrentPage(mainPath as PageId);
       }
     };
 
-    // Initial check on load
-    resolveCurrentRoute();
+    // Initial check
+    handleHashChange();
 
-    // Listen to browser Back / Forward buttons (popstate) & hashchange
-    window.addEventListener('popstate', resolveCurrentRoute);
-    window.addEventListener('hashchange', resolveCurrentRoute);
-
-    return () => {
-      window.removeEventListener('popstate', resolveCurrentRoute);
-      window.removeEventListener('hashchange', resolveCurrentRoute);
-    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
   const handleNavigate = (page: PageId) => {
     setCurrentPage(page);
-    const targetPath = page === 'home' ? '/' : `/${page}`;
-    
-    // Cleanly update URL in browser bar without reload using pushState
-    if (window.location.pathname !== targetPath || window.location.hash) {
-      window.history.pushState({ page }, '', targetPath);
-    }
+    window.location.hash = `#/${page}`;
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleSelectRoomForDetail = (room: Room) => {
     setSelectedRoomForDetail(room);
     setCurrentPage('room-detail');
-    const targetPath = `/room/${room.id}`;
-    if (window.location.pathname !== targetPath || window.location.hash) {
-      window.history.pushState({ page: 'room-detail', roomId: room.id }, '', targetPath);
-    }
+    window.location.hash = `#/room/${room.id}`;
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -123,6 +94,9 @@ export default function App() {
       <Header
         onOpenDrawer={() => setIsDrawerOpen(true)}
         onOpenBooking={() => handleOpenBooking()}
+        onOpenBrochure={() => setIsBrochureModalOpen(true)}
+        currency={currency}
+        onToggleCurrency={handleToggleCurrency}
         currentPage={currentPage}
         onNavigate={handleNavigate}
       />
@@ -134,6 +108,7 @@ export default function App() {
         currentPage={currentPage}
         onNavigate={handleNavigate}
         onOpenBooking={() => handleOpenBooking()}
+        onOpenBrochure={() => setIsBrochureModalOpen(true)}
       />
 
       {/* Main Multi-Page Content with Animated Route Transitions */}
@@ -152,6 +127,7 @@ export default function App() {
                 onNavigate={handleNavigate}
                 onSelectRoom={handleSelectRoomForDetail}
                 onBookNow={handleOpenBooking}
+                onOpenBrochure={() => setIsBrochureModalOpen(true)}
                 currency={currency}
               />
             )}
@@ -159,6 +135,7 @@ export default function App() {
             {currentPage === 'about' && (
               <AboutPage
                 onNavigate={handleNavigate}
+                onOpenBrochure={() => setIsBrochureModalOpen(true)}
                 onOpenBooking={() => handleOpenBooking()}
               />
             )}
@@ -178,6 +155,7 @@ export default function App() {
                 room={selectedRoomForDetail}
                 onNavigate={handleNavigate}
                 onSelectOtherRoom={handleSelectRoomForDetail}
+                onOpenBrochure={() => setIsBrochureModalOpen(true)}
                 currency={currency}
                 onToggleCurrency={handleToggleCurrency}
               />
@@ -187,6 +165,7 @@ export default function App() {
               <GalleryPage
                 onNavigate={handleNavigate}
                 onOpenBooking={() => handleOpenBooking()}
+                onOpenBrochure={() => setIsBrochureModalOpen(true)}
               />
             )}
 
@@ -210,6 +189,7 @@ export default function App() {
       <Footer
         onNavigate={handleNavigate}
         onSelectRoom={handleSelectRoomForDetail}
+        onOpenBrochure={() => setIsBrochureModalOpen(true)}
         onOpenBooking={() => handleOpenBooking()}
       />
 
@@ -230,8 +210,23 @@ export default function App() {
         initialRoom={bookingInitialRoom || selectedRoomForDetail}
       />
 
-      {/* Floating WhatsApp Action Trigger */}
+      {/* Official PDF Details Brochure Modal */}
+      <BrochureModal
+        isOpen={isBrochureModalOpen}
+        onClose={() => setIsBrochureModalOpen(false)}
+      />
+
+      {/* Floating WhatsApp & Brochure Action Triggers */}
       <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-2">
+        <button
+          onClick={() => setIsBrochureModalOpen(true)}
+          className="hidden sm:flex items-center gap-2 bg-[#ffffff] border border-[#e4e2e0] px-3.5 py-2 text-xs font-sans-ui font-semibold uppercase tracking-wider text-[#1b1c1b] hover:bg-[#f5f3f1] shadow-lg ambient-shadow transition-all cursor-pointer"
+          title="Open Official PDF Brochure"
+        >
+          <BookOpen className="w-4 h-4 text-[#735c00]" />
+          <span>PDF Brochure</span>
+        </button>
+
         <a
           href={directWhatsAppUrl}
           target="_blank"

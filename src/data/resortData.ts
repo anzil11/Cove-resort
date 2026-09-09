@@ -5,53 +5,6 @@ import pineBedroomBalcony from '../assets/images/pine_bedroom_balcony_1786990350
 import coveAerialNight from '../assets/images/cove_aerial_night_1786990367663.jpg';
 import starlitCampfireDeck from '../assets/images/starlit_campfire_deck_1786990379705.jpg';
 import wayanadSunsetHills from '../assets/images/wayanad_sunset_hills_1786990394925.jpg';
-import acwooden from '../assets/images/premium Ac wooden room with attached balcony and bunk bed room/WhatsApp Image 2026-08-18 at 12.48.31 (1).jpeg';
-import acwooden2 from '../assets/images/premium Ac wooden room with attached balcony and bunk bed room/WhatsApp Image 2026-08-18 at 12.48.31.jpeg';
-import acwooden3 from '../assets/images/premium Ac wooden room with attached balcony and bunk bed room/WhatsApp Image 2026-08-18 at 12.48.48.jpeg';
-
-import acwoodenpr from '../assets/images/premium Ac wooden room/WhatsApp Image 2026-08-18 at 12.49.42.jpeg';
-import acwoodenpr2 from '../assets/images/premium Ac wooden room/WhatsApp Image 2026-08-18 at 12.49.43 (1).jpeg';
-import acwoodenpr3 from '../assets/images/premium Ac wooden room/WhatsApp Image 2026-08-18 at 12.49.43 (2).jpeg';
-import acwoodenpr4 from '../assets/images/premium Ac wooden room/WhatsApp Image 2026-08-18 at 12.49.43.jpeg';
-
-import streamac from '../assets/images/stream side Ac wooden room with attached balcony room/WhatsApp Image 2026-08-18 at 12.50.39 (1).jpeg';
-import streamac1 from '../assets/images/stream side Ac wooden room with attached balcony room/WhatsApp Image 2026-08-18 at 12.50.39.jpeg';
-import streamac2 from '../assets/images/stream side Ac wooden room with attached balcony room/WhatsApp Image 2026-08-18 at 12.50.40.jpeg';
-// import streamac3 from '../assets/images/stream side Ac wooden room with attached balcony room';
-
-import streamnonac from '../assets/images/stream side non Ac room/WhatsApp Image 2026-08-18 at 12.51.23.jpeg';
-import streamnonac1 from '../assets/images/stream side non Ac room/WhatsApp Image 2026-08-18 at 12.51.24.jpeg';
-import streamnonac2 from '../assets/images/stream side non Ac room/WhatsApp Image 2026-08-18 at 17.36.54.jpeg';
-
-import otherPoolNight from '../assets/images/other/WhatsApp Image 2026-07-14 at 19.27.57.jpeg';
-import otherPoolAerial from '../assets/images/other/WhatsApp Image 2026-07-14 at 19.27.58.jpeg';
-import otherPoolClose from '../assets/images/other/WhatsApp Image 2026-07-14 at 19.29.52.jpeg';
-import otherInfinityPool from '../assets/images/other/WhatsApp Image 2026-07-14 at 19.29.53.jpeg';
-import otherPoolDeck from '../assets/images/other/WhatsApp Image 2026-07-14 at 19.29.58.jpeg';
-import otherMountainVista from '../assets/images/other/WhatsApp Image 2026-07-14 at 19.30.04 (1).jpeg';
-import otherCampfire from '../assets/images/other/WhatsApp Image 2026-07-14 at 19.30.04.jpeg';
-import otherVillaExterior from '../assets/images/other/WhatsApp Image 2026-07-14 at 19.30.05.jpeg';
-import otherVillaAerial from '../assets/images/other/WhatsApp Image 2026-07-14 at 19.30.06 (1).jpeg';
-import otherGardenPath from '../assets/images/other/WhatsApp Image 2026-07-14 at 19.30.06.jpeg';
-import otherVillaDetail from '../assets/images/other/WhatsApp Image 2026-08-18 at 17.36.52.jpeg';
-
-import honey from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.36 PM (1).jpeg';
-import tea from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.37 PM (1).jpeg';
-import chainTree from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.41 PM.jpeg';
-import pookode from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.35 PM.jpeg';
-import vythiripark from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.42 PM.jpeg';
-import mudddyboots from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.36 PM (2).jpeg';
-import karlad from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.37 PM (2).jpeg';
-import chembraPeak from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.37 PM.jpeg';
-import rippontea from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.38 PM.jpeg';
-import kanthampara from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.40 PM (1).jpeg';
-import banasura from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.38 PM (1).jpeg';
-import menmutty from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.40 PM (2).jpeg';
-import phantomRock from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.39 PM (1).jpeg';
-import muesium from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.39 PM.jpeg';
-import hltr from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.39 PM (2).jpeg';
-import ancietJainTemple from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.42 PM (1).jpeg';
-import mithangaWildlife from '../assets/images/nearby/WhatsApp Image 2026-08-19 at 10.30.41 PM (1).jpeg';
 
 export const RESORT_INFO = {
   name: "THE COVE LAKKIDI",
@@ -60,8 +13,8 @@ export const RESORT_INFO = {
   displayPhone: "+91 884822464",
   whatsappNumber: "91884822464",
   email: "stay@thecovelakkidi.com",
-  location: "Old Vythiri, Lakkidi, Wayanad, Kerala 673576, India",
-  description: "A stream-side A-frame 4-bedroom private villa and luxury wooden suites nestled in the mist-clad rainforests of Lakkidi, Wayanad. Featuring attached natural stream bathing, warm pine wooden bedrooms, campfire, and bespoke eco-luxury.",
+  location: "Lakkidi, Wayanad, Kerala 673576, India",
+  description: "A stream-side A-Framedd 8-bedroom private Villas and luxury wooden suites nestled in the mist-clad rainforests of Lakkidi, Wayanad. Featuring Natural Stream Bathing, warm pine wooden bedrooms, campfire, and bespoke eco-luxury.",
   elevation: "700m above sea level (Gateway to Wayanad)",
   weather: "18°C - 24°C Year-round Pleasant Misty Climate"
 };
@@ -72,9 +25,9 @@ export const HERO_SLIDES: HeroSlide[] = [
     image: coveAframeTwilight,
     tagline: "700m Altitude • Gateway to Wayanad",
     title: "Discover Serenity.",
-    highlight: "Iconic A-Frame Architecture",
-    description: "Stream Side 4-Bedroom Private Villa and handcrafted wooden suites nestled in the mist-clad rainforest canopy of Old Vythiri.",
-    ctaText: "Explore Suites & Villa",
+    highlight: "Iconic A-Framedd Architecture",
+    description: "Stream Side 8-bedroom Private Villas and handcrafted wooden suites nestled in the mist-clad rainforest canopy of Vythiri.",
+    ctaText: "Explore Suites & Villas",
     badge: "Sanctuary Overview"
   },
   {
@@ -83,7 +36,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     tagline: "Rainforest Night Sanctuary",
     title: "Enveloped by Forest Canopy.",
     highlight: "Deep Nature Immersion",
-    description: "Illuminated A-frame cottages nestled peacefully amidst the untamed green slopes and misty drafts of Lakkidi.",
+    description: "Illuminated A-Framedd cottages nestled peacefully amidst the untamed green slopes and misty drafts of Lakkidi.",
     ctaText: "View Aerial Haven",
     badge: "Aerial Rainforest View"
   },
@@ -115,9 +68,10 @@ export const ROOMS_DATA: Room[] = [
     name: "Premium A/C Wooden Room with Attached Balcony & Bunk Bed",
     tagline: "Spacious Pine Attic Suite with Private Forest Deck",
     category: "premium-ac",
-    priceINR: 6900,
-    priceUSD: 83,
-    originalPriceINR: 7900,
+    priceINR: 5800,
+    priceUSD: 70,
+    originalPriceINR: 6800,
+    space: "450 sqft / 42 sqm",
     capacity: "Up to 4 Adults or Family (2 Adults + 2 Kids)",
     bed: "1 Plush King Bed + 1 Solid Wood Bunk Bed (2 Tiers)",
     view: "Panoramic Rainforest Canopy & Valley",
@@ -125,17 +79,17 @@ export const ROOMS_DATA: Room[] = [
     hasBalcony: true,
     hasBunkBed: true,
     hasStreamView: true,
-    description: "Crafted entirely with natural aromatic pine timber, this high-ceiling A-frame suite features an elevated bunk bed for kids or travel companions and an attached open-air teak balcony overlooking misty greenery.",
-    fullDescription: "Perched within the upper level of the iconic A-frame architecture, this suite is our crown jewel for families and small groups. Breathe in the subtle cedar aroma as natural morning light filters through pitched triangular glass panes. Step out onto your private wooden balcony with fresh estate-brewed tea, or relax in the climate-controlled comfort after a day wandering the Lakkidi streams.",
+    description: "Crafted entirely with natural aromatic pine timber, this high-ceiling A-Framedd suite features an elevated bunk bed for kids or travel companions and an attached open-air teak balcony overlooking misty greenery.",
+    fullDescription: "Perched within the upper level of the iconic A-Framedd architecture, this suite is our crown jewel for families and small groups. Breathe in the subtle cedar aroma as natural morning light filters through pitched triangular glass panes. Step out onto your private wooden balcony with fresh estate-brewed tea, or relax in the climate-controlled comfort after a day wandering the Lakkidi streams.",
     images: [
-      acwooden3,
-      acwooden2,
-      acwooden,
-      
+      bunkBedSuite,
+      pineBedroomBalcony,
+      coveAframeTwilight,
+      coveAerialNight
     ],
     keyHighlights: [
       "Attached Private Timber Balcony with Valley View",
-      "Handcrafted 2-Tier Bunk Bed + King Size Master Bed",
+      // "Handcrafted 2-Tier Bunk Bed + Queen Size Master Bed",
       "Split Air Conditioning & High-Speed Wi-Fi",
       "Welcome Drink & Complimentary Kerala Breakfast",
       "Direct steps to Attached Natural Stream"
@@ -164,16 +118,16 @@ export const ROOMS_DATA: Room[] = [
       {
         icon: "wifi",
         title: "High-Speed Wi-Fi",
-        description: "Seamless connectivity throughout the villa and private room."
+        description: "Seamless connectivity throughout the Villas and private room."
       },
-      {
-        icon: "free_breakfast",
-        title: "Complimentary Breakfast",
-        description: "Authentic hot Kerala breakfast prepared fresh with local organic produce."
-      }
+      // {
+      //   icon: "free_breakfast",
+      //   title: "Complimentary Breakfast(on-request)",
+      //   description: "Authentic hot Kerala breakfast prepared fresh with local organic produce."
+      // }
     ],
     specifications: [
-      { label: "Layout", value: "A-Frame Attic Suite with Balcony" },
+      { label: "Room Size", value: "450 sq ft / 42 m²" },
       { label: "Max Occupancy", value: "4 Guests" },
       { label: "Bed Configuration", value: "1 King Bed + 1 Bunk Bed" },
       { label: "Balcony", value: "Private Attached Balcony" },
@@ -186,11 +140,12 @@ export const ROOMS_DATA: Room[] = [
     name: "Premium A/C Wooden Room",
     tagline: "Romantic Timber Haven with Nature Views",
     category: "premium-ac",
-    priceINR: 5199,
-    priceUSD: 63,
-    originalPriceINR: 5999,
+    priceINR: 4800,
+    priceUSD: 58,
+    originalPriceINR: 5600,
+    space: "380 sqft / 35 sqm",
     capacity: "2 Adults (Extra mattress on request)",
-    bed: "Plush King Size Bed with Luxury Cotton Linens",
+    bed: "Plush Queen Size Bed with Luxury Cotton Linens",
     view: "Tropical Forest & Landscaped Garden",
     acType: "A/C",
     hasBalcony: false,
@@ -199,17 +154,16 @@ export const ROOMS_DATA: Room[] = [
     description: "An intimate, all-wood sanctuary with warm amber lighting and floor-to-ceiling forest vistas. Designed for couples seeking peace, privacy, and quiet luxury in Wayanad.",
     fullDescription: "Immerse yourself in rich polished wood panelling, gentle forest sounds, and refined comforts. The room features a handcrafted King bed, soft ambient lighting, modern split air-conditioning, and an ensuite modern bathroom with 24/7 hot water sourced from mountain springs.",
     images: [
-      acwoodenpr,
-      acwoodenpr2,
-      acwoodenpr3,
-      acwoodenpr4
+      pineBedroomBalcony,
+      bunkBedSuite,
+      coveAframeTwilight
     ],
     keyHighlights: [
       "All-natural polished wood interiors",
-      "King size bed with orthopedic mattress",
+      "Queen Size bed with orthopedic mattress",
       "Whisper-quiet air conditioning",
       "Forest and stream soundscape",
-      "Complimentary breakfast & welcome drink"
+      // "Complimentary Breakfast(on-request) & welcome drink"
     ],
     amenities: [
       {
@@ -244,9 +198,9 @@ export const ROOMS_DATA: Room[] = [
       }
     ],
     specifications: [
-      { label: "Layout", value: "Timber Pine Master Bedroom" },
+      { label: "Room Size", value: "380 sq ft / 35 m²" },
       { label: "Max Occupancy", value: "2 Adults + 1 Child" },
-      { label: "Bed Configuration", value: "1 King Size Bed" },
+      { label: "Bed Configuration", value: "1 Queen Size Bed" },
       { label: "View", value: "Garden & Forest Edge" },
       { label: "Climate", value: "Split A/C & Natural Ventilation" },
       { label: "Bathroom", value: "Private Ensuite with Modern Fittings" }
@@ -254,12 +208,13 @@ export const ROOMS_DATA: Room[] = [
   },
   {
     id: "streamside-ac-wooden-balcony",
-    name: "Stream Side A/C Wooden Room with Attached Balcony",
+    name: " A/C Wooden Room with Attached Balcony",
     tagline: "Waterfront Serenity with Private Rushing Stream Deck",
     category: "streamside-ac",
-    priceINR: 5900,
-    priceUSD: 71,
-    originalPriceINR: 6900,
+    priceINR: 5200,
+    priceUSD: 63,
+    originalPriceINR: 6200,
+    space: "420 sqft / 39 sqm",
     capacity: "2-3 Adults",
     bed: "King Bed + Private Balcony Lounge",
     view: "Direct Attached Natural Stream & Waterfall Cascade",
@@ -270,9 +225,9 @@ export const ROOMS_DATA: Room[] = [
     description: "Positioned directly above the crystal-clear mountain stream, this room allows you to fall asleep to the hypnotic melody of running water and wake up to emerald forest canopy views.",
     fullDescription: "Step through wide glass doors straight onto your private overwater balcony. Watch the cool mountain stream meander beneath pebble banks while sipping your morning filter coffee. Complete with split air conditioning, warm wooden architecture, comfortable seating, and immediate access to the natural stream bathing pools.",
     images: [
-      streamac2,
-      streamac1,
-      streamac
+      pineBedroomBalcony,
+      coveAerialNight,
+      starlitCampfireDeck
     ],
     keyHighlights: [
       "Directly overlooks the property's natural flowing stream",
@@ -314,9 +269,9 @@ export const ROOMS_DATA: Room[] = [
       }
     ],
     specifications: [
-      { label: "Layout", value: "Waterfront Wooden Suite" },
+      { label: "Room Size", value: "420 sq ft / 39 m²" },
       { label: "Max Occupancy", value: "3 Adults" },
-      { label: "Bed Configuration", value: "1 King Size Bed" },
+      { label: "Bed Configuration", value: "1 Queen Size Bed" },
       { label: "Balcony", value: "Attached Stream-Facing Balcony" },
       { label: "Location", value: "Ground / Water Level" },
       { label: "Bathroom", value: "Spacious Ensuite with Shower" }
@@ -327,9 +282,10 @@ export const ROOMS_DATA: Room[] = [
     name: "Stream Side Non-A/C Deluxe Room",
     tagline: "Eco-Conscious Comfort Cooled by Mountain Mist & Water Breeze",
     category: "streamside-non-ac",
-    priceINR: 3900,
-    priceUSD: 47,
-    originalPriceINR: 4600,
+    priceINR: 3600,
+    priceUSD: 44,
+    originalPriceINR: 4200,
+    space: "340 sqft / 31 sqm",
     capacity: "2 Adults",
     bed: "Queen Size Comfort Bed with Artisan Headboard",
     view: "Stream Path & Tropical Coffee Plantation",
@@ -340,15 +296,15 @@ export const ROOMS_DATA: Room[] = [
     description: "Experience genuine hill station living. Lakkidi's 700m elevation keeps temperatures cool and crisp naturally, while the nearby stream provides refreshing pure air.",
     fullDescription: "Thoughtfully designed for travelers who appreciate natural mountain breezes and sustainable eco-hospitality. Features modern tasteful interiors with leaf-motif headboards, high-speed ceiling fans, wide screened windows for natural airflow, attached bathroom with continuous hot water, and instant stream access.",
     images: [
-      streamnonac,
-      streamnonac1,
-      streamnonac2
+      pineBedroomBalcony,
+      bunkBedSuite,
+      wayanadSunsetHills
     ],
     keyHighlights: [
       "Naturally cool year-round climate (18°C - 23°C)",
       "Minimalist deluxe room with comfortable bed & work desk",
-      "Direct walking path to the natural stream",
-      "Free high-speed Wi-Fi & complimentary breakfast",
+      // "Direct walking path to the natural stream",
+      // "Free high-speed Wi-Fi & Complimentary Breakfast(on-request)",
       "Budget-friendly without compromising tranquility"
     ],
     amenities: [
@@ -384,7 +340,7 @@ export const ROOMS_DATA: Room[] = [
       }
     ],
     specifications: [
-      { label: "Layout", value: "Stream Bank Deluxe Room" },
+      { label: "Room Size", value: "340 sq ft / 31 m²" },
       { label: "Max Occupancy", value: "2 Adults" },
       { label: "Bed Configuration", value: "1 Queen Size Bed" },
       { label: "Cooling", value: "High-Speed Fan & Mountain Breeze" },
@@ -392,93 +348,94 @@ export const ROOMS_DATA: Room[] = [
       { label: "Bathroom", value: "Private Attached Bathroom" }
     ]
   },
-  // {
-  //   id: "streamside-aframe-4bhk-villa",
-  //   name: "Stream Side A-Frame 04 Bedroom Private Villa",
-  //   tagline: "Exclusive Full Villa Buyout — The Ultimate Private Sanctuary",
-  //   category: "entire-villa",
-  //   priceINR: 21899,
-  //   priceUSD: 260,
-  //   originalPriceINR: 25500,
-  //   capacity: "Up to 12-16 Guests (Ideal for Family Gatherings & Corporate Retreats)",
-  //   bed: "4 Private Bedrooms (2 Wooden A/C + 2 Stream Non-A/C + Bunk Beds)",
-  //   view: "360° Private Stream, Forest Canopy & Mountain Slopes",
-  //   acType: "Climate Controlled",
-  //   hasBalcony: true,
-  //   hasBunkBed: true,
-  //   hasStreamView: true,
-  //   isEntireVilla: true,
-  //   description: "Reserve the entire iconic A-frame property exclusively for your group. 4 full bedrooms, attached natural stream, private campfire courtyard, barbecue station, and dedicated concierge.",
-  //   fullDescription: "The ultimate private vacation in Wayanad. The Cove Lakkidi's full 4-bedroom A-frame estate transforms into your private luxury home. Enjoy complete privacy, unhindered stream bathing, starlit evening bonfires, live barbecue grilling on the stone patio, and personalized meals crafted for your group.",
-  //   images: [
-  //     coveAframeTwilight,
-  //     coveAerialNight,
-  //     bunkBedSuite,
-  //     pineBedroomBalcony,
-  //     starlitCampfireDeck
-  //   ],
-  //   keyHighlights: [
-  //     "100% Exclusive access to all 4 bedrooms & private grounds",
-  //     "Private attached natural stream bank with safety steps",
-  //     "Private Stone Patio with Bonfire Pit & BBQ Setup",
-  //     "Accommodates 12 to 16 guests with extra bedding",
-  //     "Dedicated caretaker and customized meal packages",
-  //     "Pet friendly with ample lawn and running space"
-  //   ],
-  //   amenities: [
-  //     {
-  //       icon: "villa",
-  //       title: "Entire Private Property",
-  //       description: "No other guests. Total exclusivity and seclusion in the rainforest."
-  //     },
-  //     {
-  //       icon: "local_fire_department",
-  //       title: "Campfire & BBQ Station",
-  //       description: "Private night fire pit with seating logs and barbecue grill equipment."
-  //     },
-  //     {
-  //       icon: "waves",
-  //       title: "Private Stream Bank",
-  //       description: "Exclusive access to the crystal clear flowing stream right on property."
-  //     },
-  //     {
-  //       icon: "music_note",
-  //       title: "Party Sound System",
-  //       description: "High-grade Bluetooth music system and ambient lighting."
-  //     },
-  //     {
-  //       icon: "free_breakfast",
-  //       title: "Full Group Breakfast",
-  //       description: "Grand complimentary breakfast for all staying guests."
-  //     },
-  //     {
-  //       icon: "pets",
-  //       title: "Pet Friendly Estate",
-  //       description: "Gated estate where pets can safely roam and play."
-  //     }
-  //   ],
-  //   specifications: [
-  //     { label: "Layout", value: "04 Bedroom Private Villa" },
-  //     { label: "Bedrooms", value: "4 Distinct Themed Bedrooms" },
-  //     { label: "Bathrooms", value: "4 Ensuite Bathrooms with Geysers" },
-  //     { label: "Capacity", value: "12 - 16 Guests" },
-  //     { label: "Outdoor Area", value: "Private Stream Bank, Patio & Campfire Area" },
-  //     { label: "Parking", value: "Private parking for 4-5 vehicles on-site" }
-  //   ]
-  // }
+  {
+    id: "streamside-aframe-4bhk-Villas",
+    name: "Stream Side A-Framedd 04 Bedroom Private Villas",
+    tagline: "Exclusive Full Villas Buyout — The Ultimate Private Sanctuary",
+    category: "entire-Villas",
+    priceINR: 17500,
+    priceUSD: 210,
+    originalPriceINR: 21000,
+    space: "2,200 sqft / 205 sqm",
+    capacity: "Up to 12-16 Guests (Ideal for Family Gatherings & Corporate Retreats)",
+    bed: "4 Private Bedrooms (2 Wooden A/C + 2 Stream Non-A/C + Bunk Beds)",
+    view: "360° Private Stream, Forest Canopy & Mountain Slopes",
+    acType: "Climate Controlled",
+    hasBalcony: true,
+    hasBunkBed: true,
+    hasStreamView: true,
+    isEntireVillas: true,
+    description: "Reserve the entire iconic A-Framedd property exclusively for your group. 4 full bedrooms, attached natural stream, private campfire courtyard, barbecue station, and dedicated concierge.",
+    fullDescription: "The ultimate private vacation in Wayanad. The Cove Lakkidi's full 8-bedroom A-Framedd estate transforms into your private luxury home. Enjoy complete privacy, unhindered stream bathing, starlit evening bonfires, live barbecue grilling on the stone patio, and personalized meals crafted for your group.",
+    images: [
+      coveAframeTwilight,
+      coveAerialNight,
+      bunkBedSuite,
+      pineBedroomBalcony,
+      starlitCampfireDeck
+    ],
+    keyHighlights: [
+      "100% Exclusive access to all 4 bedrooms & private grounds",
+      "Private attached natural stream bank with safety steps",
+      "Private Stone Patio with Bonfire Pit & BBQ Setup",
+      "Accommodates 12 to 16 guests with extra bedding",
+      "Dedicated caretaker and customized meal packages",
+      "Pet friendly with ample lawn and running space"
+    ],
+    amenities: [
+      {
+        icon: "Villas",
+        title: "Entire Private Property",
+        description: "No other guests. Total exclusivity and seclusion in the rainforest."
+      },
+      {
+        icon: "local_fire_department",
+        title: "Campfire & BBQ Station",
+        description: "Private night fire pit with seating logs and barbecue grill equipment."
+      },
+      {
+        icon: "waves",
+        title: "Private Stream Bank",
+        description: "Exclusive access to the crystal clear flowing stream right on property."
+      },
+      {
+        icon: "music_note",
+        title: "Party Sound System",
+        description: "High-grade Bluetooth music system and ambient lighting."
+      },
+      // {
+      //   icon: "free_breakfast",
+      //   title: "Full Group Breakfast",
+      //   description: "Grand Complimentary Breakfast(on-request) for all staying guests."
+      // },
+      {
+        icon: "pets",
+        title: "Pet Friendly Estate",
+        description: "Gated estate where pets can safely roam and play."
+      }
+    ],
+    specifications: [
+      { label: "Total Space", value: "2,200 sq ft Private Estate" },
+      { label: "Bedrooms", value: "4 Distinct Themed Bedrooms" },
+      { label: "Bathrooms", value: "4 Ensuite Bathrooms with Geysers" },
+      { label: "Capacity", value: "12 - 16 Guests" },
+      { label: "Outdoor Area", value: "Private Stream Bank, Patio & Campfire Area" },
+      { label: "Parking", value: "Private parking for 4-5 vehicles on-site" }
+    ]
+  }
 ];
 
 // All 26 Nearby Attractions from the PDF
 export const ATTRACTIONS_DATA: Attraction[] = [
   {
-    id: "teenzania-park",
-    name: "Teenzania Park",
+    id: "tanzania-park",
+    name: "Tanzania Park",
     distance: "200 m",
     distanceKm: 0.2,
     category: "Nature & Lake",
     duration: "2 min walk",
-    description: "Quaint local nature park located directly within walking distance from the villa, ideal for peaceful morning strolls.",
-    image: "https://static.where-e.com/India/Wayanad/Vayittiri/Teenzania-Adventure-Park_70b5ea6da57e636e19908f4bdd698e06.jpg",
+    description: "Quaint local nature park located directly within walking distance from the Villas, ideal for peaceful morning strolls.",
+    image: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80",
     tags: ["Walking Distance", "Morning Stroll", "Family Friendly"]
   },
   {
@@ -489,7 +446,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Heritage & Culture",
     duration: "5 min walk / 1 min drive",
     description: "Famous historical ficus tree bounded by a heavy chain with a legendary folklore about the tribal youth Karinthandan who guided the British through the Thamarassery ghat.",
-    image: chainTree,
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
     tags: ["Historical Legend", "Cultural Landmark", "Must Visit"]
   },
   {
@@ -500,18 +457,18 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Viewpoint",
     duration: "3 min drive",
     description: "Known as the 'Gateway of Wayanad', perched atop Thamarassery Ghat with breathtaking bird's eye views of 9 hairpin curves and deep mist-swirled valleys.",
-    image: "https://imgs.search.brave.com/-_L7hnyYFyQdORBbwwSTXpOuMvLyv3-eWbb6SrPSoR8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2RuLnRyYXZlamFy/LmNvbS9zdG9yYWdl/L2luZGlhX2F0dHJh/Y3Rpb25fdG91cl9p/bWFnZS8xNzU5MTMy/MTc0XzY4ZGEzYTBl/YTMxZTQud2VicA",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
     tags: ["Sunset Spot", "Misty Valley", "Photography"]
   },
   {
     id: "enn-ooru",
-    name: "Enn Ooru (Tribal Heritage Village)",
+    name: "Enn Ooru (Tribal Heritage Villasge)",
     distance: "1 Km",
     distanceKm: 1.0,
     category: "Heritage & Culture",
     duration: "4 min drive",
-    description: "A vibrant tribal heritage village showcasing traditional tribal huts, authentic ethnic culinary experiences, handicrafts, and cultural art.",
-    image: "https://www.dtpcwayanad.com/uploads/picture_gallery/gallery_images/en-ooru-1920-20250801093811138371.webp",
+    description: "A vibrant tribal heritage Villasge showcasing traditional tribal huts, authentic ethnic culinary experiences, handicrafts, and cultural art.",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
     tags: ["Ethnic Culture", "Artisan Crafts", "Traditional Food"]
   },
   {
@@ -523,7 +480,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     isPrivate: true,
     duration: "4 min drive",
     description: "Exciting adventure and recreational zone featuring outdoor games, trampoline activities, rope bridges, and panoramic viewpoints.",
-    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/03/39/d3/caption.jpg?w=1400&h=-1&s=1",
+    image: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=800&q=80",
     tags: ["Adventure", "Games", "Private Park"]
   },
   {
@@ -534,7 +491,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Nature & Lake",
     duration: "5 min drive",
     description: "Scenic natural freshwater lake nestled amidst evergreen forests and western ghat hills, offering pedal boating, an aquarium, and spice shopping.",
-    image: pookode,
+    image: "https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=800&q=80",
     tags: ["Boating", "Freshwater Lake", "Lotus Flowers"]
   },
   {
@@ -546,7 +503,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     isPrivate: true,
     duration: "7 min drive",
     description: "Interactive educational honey museum exhibiting live bee colonies, pure forest honey extraction demonstrations, and natural beeswax products.",
-    image: honey,
+    image: "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80",
     tags: ["Honey Tasting", "Educational", "Private Museum"]
   },
   {
@@ -558,7 +515,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     isPrivate: true,
     duration: "10 min drive",
     description: "Thrilling nature adventure hub with canopy ziplining, giant swings, paintball, archery, and off-road ATV trails.",
-    image: vythiripark,
+    image: "https://images.unsplash.com/photo-1533518463841-d62e1fc91373?auto=format&fit=crop&w=800&q=80",
     tags: ["Zipline", "ATV Rides", "Giant Swing"]
   },
   {
@@ -569,7 +526,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Adventure",
     duration: "20 min drive",
     description: "South India's longest and most exhilarating tea plantation zipline gliding high above sprawling emerald slopes.",
-    image: mudddyboots,
+    image: "https://images.unsplash.com/photo-1533518463841-d62e1fc91373?auto=format&fit=crop&w=800&q=80",
     tags: ["Longest Zipline", "Tea Garden Glide", "High Adrenaline"]
   },
   {
@@ -580,7 +537,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Heritage & Culture",
     duration: "25 min drive",
     description: "Historic 1911 wooden tea factory turned museum showcasing the century-old evolution of Wayanad tea production and tea tasting sessions.",
-    image: tea,
+    image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80",
     tags: ["Tea Tasting", "Colonial History", "Factory Tour"]
   },
   {
@@ -591,7 +548,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Nature & Lake",
     duration: "45 min drive",
     description: "Second largest freshwater lake in Wayanad equipped with thrilling cross-lake zipline, kayaking, bamboo rafting, and rock climbing.",
-    image: karlad,
+    image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80",
     tags: ["Kayaking", "Cross-Lake Zipline", "Water Sports"]
   },
   {
@@ -602,7 +559,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Viewpoint",
     duration: "50 min drive",
     description: "The highest peak in Wayanad (2,100m) famous for its misty trekking trails and the legendary heart-shaped perennial lake nestled midway.",
-    image: chembraPeak,
+    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80",
     tags: ["Heart Lake", "Trekking", "Highest Peak"]
   },
   {
@@ -613,7 +570,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Heritage & Culture",
     duration: "50 min drive",
     description: "Expansive 450-hectare British colonial tea estate perched at 2,000 ft, producing some of South India's finest Orthodox and CTC teas.",
-    image: rippontea,
+    image: "https://images.unsplash.com/photo-1533038590840-1cde6e668a91?auto=format&fit=crop&w=800&q=80",
     tags: ["Tea Plantation", "Scenic Hills", "Shopping"]
   },
   {
@@ -624,7 +581,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Waterfall",
     duration: "55 min drive",
     description: "Picturesque, less-crowded forest cascade surrounded by tea gardens and bamboo groves, offering tranquil natural swimming spots.",
-    image: kanthampara,
+    image: "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=80",
     tags: ["Secluded Waterfall", "Natural Pool", "Tea Garden Setting"]
   },
   {
@@ -635,32 +592,32 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Nature & Lake",
     duration: "55 min drive",
     description: "The largest earth dam in India and second largest in Asia, featuring picturesque tiny islands set against the colossal Banasura mountain backdrop and speed boating.",
-    image: banasura,
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
     tags: ["Speed Boating", "Earth Dam", "Floating Islands"]
   },
-  // {
-  //   id: "karapuzha-dam",
-  //   name: "Karapuzha Dam & Adventure Park",
-  //   distance: "30 Km",
-  //   distanceKm: 30.0,
-  //   category: "Adventure",
-  //   duration: "1 hr drive",
-  //   description: "Modern reservoir attraction boasting manicured rose gardens, longest hanging rope bridge, giant swings, and children's amusement park.",
-  //   image: "https://images.unsplash.com/photo-1508873696983-2df5293cb32b?auto=format&fit=crop&w=800&q=80",
-  //   tags: ["Hanging Bridge", "Rose Gardens", "Family Park"]
-  // },
-  // {
-  //   id: "900-kandi-eco-park",
-  //   name: "900 Kandi Eco Park & Glass Bridge",
-  //   distance: "30 Km",
-  //   distanceKm: 30.0,
-  //   category: "Adventure",
-  //   isPrivate: true,
-  //   duration: "1 hr drive",
-  //   description: "Deep jungle paradise reached by 4x4 off-road jeep, famous for India's sky glass bridge suspended 100 feet above dense rainforest canopy.",
-  //   image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
-  //   tags: ["Glass Bridge", "Off-Road Jeep Trek", "Sky Walk"]
-  // },
+  {
+    id: "karapuzha-dam",
+    name: "Karapuzha Dam & Adventure Park",
+    distance: "30 Km",
+    distanceKm: 30.0,
+    category: "Adventure",
+    duration: "1 hr drive",
+    description: "Modern reservoir attraction boasting manicured rose gardens, longest hanging rope bridge, giant swings, and children's amusement park.",
+    image: "https://images.unsplash.com/photo-1508873696983-2df5293cb32b?auto=format&fit=crop&w=800&q=80",
+    tags: ["Hanging Bridge", "Rose Gardens", "Family Park"]
+  },
+  {
+    id: "900-kandi-eco-park",
+    name: "900 Kandi Eco Park & Glass Bridge",
+    distance: "30 Km",
+    distanceKm: 30.0,
+    category: "Adventure",
+    isPrivate: true,
+    duration: "1 hr drive",
+    description: "Deep jungle paradise reached by 4x4 off-road jeep, famous for India's sky glass bridge suspended 100 feet above dense rainforest canopy.",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    tags: ["Glass Bridge", "Off-Road Jeep Trek", "Sky Walk"]
+  },
   {
     id: "meenmutty-waterfall",
     name: "Meenmutty Waterfall",
@@ -669,20 +626,20 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Waterfall",
     duration: "1 hr 5 min drive",
     description: "Wayanad's most spectacular 3-tiered waterfall cascading down 300 meters amidst untamed wilderness and rocky gorges.",
-    image: menmutty,
+    image: "https://images.unsplash.com/photo-1511497584788-87676104235f?auto=format&fit=crop&w=800&q=80",
     tags: ["3-Tiered Falls", "Jungle Trek", "Thunderous Cascade"]
   },
-  // {
-  //   id: "soochipara-waterfall",
-  //   name: "Soochipara (Sentinel Rock) Waterfall",
-  //   distance: "32 Km",
-  //   distanceKm: 32.0,
-  //   category: "Waterfall",
-  //   duration: "1 hr 10 min drive",
-  //   description: "Magnificent waterfall dropping onto massive granite rocks where water sprays into refreshing misty natural pool chambers.",
-  //   image: "https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80",
-  //   tags: ["Rock Climbing", "Natural Pool Bath", "Forest Trek"]
-  // },
+  {
+    id: "soochipara-waterfall",
+    name: "Soochipara (Sentinel Rock) Waterfall",
+    distance: "32 Km",
+    distanceKm: 32.0,
+    category: "Waterfall",
+    duration: "1 hr 10 min drive",
+    description: "Magnificent waterfall dropping onto massive granite rocks where water sprays into refreshing misty natural pool chambers.",
+    image: "https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80",
+    tags: ["Rock Climbing", "Natural Pool Bath", "Forest Trek"]
+  },
   {
     id: "phantom-rock",
     name: "Phantom Rock (Cheengeri)",
@@ -691,7 +648,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Viewpoint",
     duration: "1 hr 15 min drive",
     description: "Naturally formed skull-shaped metamorphic rock formation sitting atop mountain crest with 360-degree viewpoints.",
-    image: phantomRock,
+    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80",
     tags: ["Geological Wonder", "Sunset Vista", "Trekking Trail"]
   },
   {
@@ -702,7 +659,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Heritage & Culture",
     duration: "1 hr 15 min drive",
     description: "One of Kerala's most significant archaeological museums holding tribal relics, megalithic pottery, hero stones (Veerakkallu), and 2nd-century artifacts.",
-    image: muesium,
+    image: "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=800&q=80",
     tags: ["Archaeological Relics", "Megalithic Art", "Ancient History"]
   },
   {
@@ -713,7 +670,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Viewpoint",
     duration: "1 hr 20 min drive",
     description: "Towering peak offering one of the most adventurous trekking trails through shola forests and rolling grasslands.",
-    image: hltr,
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
     tags: ["Challenging Trek", "Shola Forest", "Grasslands"]
   },
   {
@@ -724,31 +681,31 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Heritage & Culture",
     duration: "1 hr 20 min drive",
     description: "13th-century granite temple showcasing exquisite Hoysala and Vijayanagara architectural carvings, later used as an ammunition battery by Tipu Sultan.",
-    image: ancietJainTemple,
+    image: "https://images.unsplash.com/photo-1590073844006-33379778ae09?auto=format&fit=crop&w=800&q=80",
     tags: ["13th Century Architecture", "Granite Carvings", "Historic Temple"]
   },
-  // {
-  //   id: "edakkal-caves",
-  //   name: "Edakkal Caves (Ambikuthi Mala)",
-  //   distance: "39 Km",
-  //   distanceKm: 39.0,
-  //   category: "Heritage & Culture",
-  //   duration: "1 hr 25 min drive",
-  //   description: "World-renowned pre-historic rock cleft shelter housing petroglyphs and Neolithic engravings dating back to 6,000 BCE.",
-  //   image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
-  //   tags: ["Neolithic Rock Art", "Stone Age Petroglyphs", "Global Heritage"]
-  // },
-  // {
-  //   id: "kuruva-island",
-  //   name: "Kuruva Island (Kuruvadweep)",
-  //   distance: "48 Km",
-  //   distanceKm: 48.0,
-  //   category: "Nature & Lake",
-  //   duration: "1 hr 45 min drive",
-  //   description: "A 950-acre protected river delta comprising uninhabited islets on the Kabini River with bamboo rafting, rare orchids, and indigenous bird species.",
-  //   image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-  //   tags: ["Bamboo Rafting", "Kabini River Delta", "Botanical Sanctuary"]
-  // },
+  {
+    id: "edakkal-caves",
+    name: "Edakkal Caves (Ambikuthi Mala)",
+    distance: "39 Km",
+    distanceKm: 39.0,
+    category: "Heritage & Culture",
+    duration: "1 hr 25 min drive",
+    description: "World-renowned pre-historic rock cleft shelter housing petroglyphs and Neolithic engravings dating back to 6,000 BCE.",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
+    tags: ["Neolithic Rock Art", "Stone Age Petroglyphs", "Global Heritage"]
+  },
+  {
+    id: "kuruva-island",
+    name: "Kuruva Island (Kuruvadweep)",
+    distance: "48 Km",
+    distanceKm: 48.0,
+    category: "Nature & Lake",
+    duration: "1 hr 45 min drive",
+    description: "A 950-acre protected river delta comprising uninhabited islets on the Kabini River with bamboo rafting, rare orchids, and indigenous bird species.",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    tags: ["Bamboo Rafting", "Kabini River Delta", "Botanical Sanctuary"]
+  },
   {
     id: "muthanga-wildlife",
     name: "Muthanga Wildlife Sanctuary",
@@ -757,7 +714,7 @@ export const ATTRACTIONS_DATA: Attraction[] = [
     category: "Wildlife & Flora",
     duration: "1 hr 50 min drive",
     description: "Part of Nilgiri Biosphere Reserve offering thrilling morning jeep safaris to spot wild Asian elephants, spotted deer, bison, peacocks, and occasional leopards.",
-    image: mithangaWildlife,
+    image: "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=800&q=80",
     tags: ["Wild Elephant Safari", "Nilgiri Biosphere", "Forest Department Jeep"]
   }
 ];
@@ -767,13 +724,13 @@ export const RESORT_AMENITIES = [
     icon: "waves",
     title: "Attached Natural Stream",
     highlight: "Zero-footprint mountain waters",
-    description: "Direct safe stone steps from the villa leading down into a cool, crystal-clear flowing stream surrounded by wild ferns."
+    description: "Direct safe stone steps from the Villas leading down into a cool, crystal-clear flowing stream surrounded by wild ferns."
   },
   {
     icon: "cottage",
-    title: "A-Frame Wooden Architecture",
+    title: "A-Framedd Wooden Architecture",
     highlight: "Handcrafted pine timber",
-    description: "Distinctive steep-pitched A-frame design with dramatic triangular windows and natural thermal insulation."
+    description: "Distinctive steep-pitched A-Framedd design with dramatic triangular windows and natural thermal insulation."
   },
   {
     icon: "local_fire_department",
@@ -781,12 +738,12 @@ export const RESORT_AMENITIES = [
     highlight: "Starry rainforest nights",
     description: "Stone outdoor fire pit with complimentary firewood logs and marinated barbecue grilling available upon request."
   },
-  {
-    icon: "free_breakfast",
-    title: "Complimentary Breakfast",
-    highlight: "Farm-to-table cuisine",
-    description: "Enjoy steaming traditional appams, puttu with kadala curry, idlis, and continental fruit platters."
-  },
+  // {
+  //   icon: "free_breakfast",
+  //   title: "Complimentary Breakfast(on-request)",
+  //   highlight: "Farm-to-table cuisine",
+  //   description: "Enjoy steaming traditional appams, puttu with kadala curry, idlis, and continental fruit platters."
+  // },
   {
     icon: "wifi",
     title: "High-Speed Wi-Fi",
@@ -813,174 +770,81 @@ export const RESORT_AMENITIES = [
   }
 ];
 
-
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "g1",
-    title: "Luxury Pool at Night",
-    category: "pool",
-    image: otherPoolNight,
-    caption: "The beautifully illuminated pool creating a serene atmosphere beneath the evening sky.",
-    alt: "Luxury swimming pool illuminated at night"
+    title: "The Iconic A-Framedd Villas at Twilight",
+    category: "Villas",
+    image: coveAframeTwilight,
+    caption: "The illuminated A-Framedd architectural facade glowing warmly with star sconces and courtyard dining amidst Wayanad's emerald jungle.",
+    alt: "A-Framedd wooden Villas illuminated at dusk nestled in rainforest"
   },
   {
     id: "g2",
-    title: "Aerial Pool & Villa View",
-    category: "pool",
-    image: otherPoolAerial,
-    caption: "Aerial view showcasing the resort pool, surrounding greenery, and villa spaces.",
-    alt: "Aerial view of resort swimming pool surrounded by greenery"
+    title: "Canopy Aerial Sanctuary at Night",
+    category: "Villas",
+    image: coveAerialNight,
+    caption: "Bird's-eye drone view of illuminated wooden A-Framedd cottages nestled deep within the misty tropical canopy of Lakkidi.",
+    alt: "Drone aerial night view of A-Framedd cottages in Wayanad rainforest"
   },
   {
     id: "g3",
-    title: "Poolside Escape",
-    category: "pool",
-    image: otherPoolClose,
-    caption: "A close-up view of the inviting pool designed for a relaxing getaway.",
-    alt: "Close view of luxury resort swimming pool"
+    title: "Premium A/C Wooden Attic & Bunk Bed Suite",
+    category: "rooms",
+    image: bunkBedSuite,
+    caption: "High pitched pine roof, modern chandelier, plush King master bed and solid pine loft bunk bed with steel ladder.",
+    alt: "Pine wooden bedroom interior with loft bunk bed and chandelier"
   },
   {
     id: "g4",
-    title: "Infinity Pool",
-    category: "pool",
-    image: otherInfinityPool,
-    caption: "A stunning infinity pool overlooking the lush natural surroundings.",
-    alt: "Infinity swimming pool overlooking green landscape"
+    title: "Handcrafted Wooden Balcony Suite",
+    category: "rooms",
+    image: pineBedroomBalcony,
+    caption: "Natural pine wall paneling, skylights, king bed, and glass sliding door leading to private forest sit-out balcony.",
+    alt: "Pine wooden room with balcony view and skylights"
   },
   {
     id: "g5",
-    title: "Relaxing Pool Deck",
-    category: "pool",
-    image: otherPoolDeck,
-    caption: "A spacious pool deck offering the perfect setting to unwind and enjoy the surroundings.",
-    alt: "Resort pool deck with swimming pool and seating area"
+    title: "Starlit Campfire & BBQ Patio Deck",
+    category: "nature",
+    image: starlitCampfireDeck,
+    caption: "Cozy timber chairs surrounding the roaring fire pit with sunset refreshments and ambient garden lanterns.",
+    alt: "Outdoor campfire patio with wooden chairs under starry sky"
   },
   {
     id: "g6",
-    title: "Misty Mountain Vista",
+    title: "Golden Hour Misty Mountain Vista",
     category: "nature",
-    image: otherMountainVista,
-    caption: "Beautiful mountain views surrounded by the lush greenery and mist of Wayanad.",
-    alt: "Misty green mountain landscape in Wayanad"
+    image: wayanadSunsetHills,
+    caption: "Spectacular sunset sunbeams breaking over rolling green ridges and misty tea valleys of Lakkidi, Wayanad.",
+    alt: "Golden hour sunset over misty Wayanad hills and valleys"
   },
   {
     id: "g7",
-    title: "Outdoor Campfire",
-    category: "nature",
-    image: otherCampfire,
-    caption: "A cozy outdoor campfire setting for peaceful evenings surrounded by nature.",
-    alt: "Outdoor campfire seating area surrounded by greenery"
+    title: "Crystal Clear Natural Stream",
+    category: "stream",
+    image: "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=85",
+    caption: "The attached mountain stream cascading gently over smoothed river boulders right along the property perimeter.",
+    alt: "Fresh crystal water stream running through forest"
   },
   {
     id: "g8",
-    title: "Villa Exterior",
-    category: "villa",
-    image: otherVillaExterior,
-    caption: "The elegant villa exterior blending contemporary comfort with the surrounding natural landscape.",
-    alt: "Luxury villa exterior surrounded by greenery"
-  },
-  {
-    id: "g9",
-    title: "Villa from Above",
-    category: "villa",
-    image: otherVillaAerial,
-    caption: "Aerial perspective of the villa nestled within the lush landscape.",
-    alt: "Aerial view of luxury villa surrounded by nature"
-  },
-  {
-    id: "g10",
-    title: "Garden Pathway",
-    category: "nature",
-    image: otherGardenPath,
-    caption: "A peaceful garden pathway winding through the property's lush green surroundings.",
-    alt: "Garden pathway surrounded by lush tropical greenery"
-  },
-  {
-    id: "g11",
-    title: "Villa Detail",
-    category: "villa",
-    image: otherVillaDetail,
-    caption: "A detailed view highlighting the villa's architecture and refined design.",
-    alt: "Detailed view of luxury villa architecture"
+    title: "Farm-Fresh Kerala Breakfast",
+    category: "dining",
+    image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1200&q=85",
+    caption: "Freshly prepared breakfast spread including local spices, fruits, and hot Wayanad estate coffee.",
+    alt: "Traditional organic breakfast table spread"
   }
 ];
-
-
-// export const GALLERY_ITEMS: GalleryItem[] = [
-//   {
-//     id: "g1",
-//     title: "The Iconic A-Frame Villa at Twilight",
-//     category: "villa",
-//     image: coveAframeTwilight,
-//     caption: "The illuminated A-frame architectural facade glowing warmly with star sconces and courtyard dining amidst Wayanad's emerald jungle.",
-//     alt: "A-Frame wooden villa illuminated at dusk nestled in rainforest"
-//   },
-//   {
-//     id: "g2",
-//     title: "Canopy Aerial Sanctuary at Night",
-//     category: "villa",
-//     image: coveAerialNight,
-//     caption: "Bird's-eye drone view of illuminated wooden A-frame cottages nestled deep within the misty tropical canopy of Lakkidi.",
-//     alt: "Drone aerial night view of A-frame cottages in Wayanad rainforest"
-//   },
-//   {
-//     id: "g3",
-//     title: "Premium A/C Wooden Attic & Bunk Bed Suite",
-//     category: "rooms",
-//     image: bunkBedSuite,
-//     caption: "High pitched pine roof, modern chandelier, plush King master bed and solid pine loft bunk bed with steel ladder.",
-//     alt: "Pine wooden bedroom interior with loft bunk bed and chandelier"
-//   },
-//   {
-//     id: "g4",
-//     title: "Handcrafted Wooden Balcony Suite",
-//     category: "rooms",
-//     image: pineBedroomBalcony,
-//     caption: "Natural pine wall paneling, skylights, king bed, and glass sliding door leading to private forest sit-out balcony.",
-//     alt: "Pine wooden room with balcony view and skylights"
-//   },
-//   {
-//     id: "g5",
-//     title: "Starlit Campfire & BBQ Patio Deck",
-//     category: "nature",
-//     image: starlitCampfireDeck,
-//     caption: "Cozy timber chairs surrounding the roaring fire pit with sunset refreshments and ambient garden lanterns.",
-//     alt: "Outdoor campfire patio with wooden chairs under starry sky"
-//   },
-//   {
-//     id: "g6",
-//     title: "Golden Hour Misty Mountain Vista",
-//     category: "nature",
-//     image: wayanadSunsetHills,
-//     caption: "Spectacular sunset sunbeams breaking over rolling green ridges and misty tea valleys of Lakkidi, Wayanad.",
-//     alt: "Golden hour sunset over misty Wayanad hills and valleys"
-//   },
-//   {
-//     id: "g7",
-//     title: "Crystal Clear Natural Stream",
-//     category: "stream",
-//     image: "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=85",
-//     caption: "The attached mountain stream cascading gently over smoothed river boulders right along the property perimeter.",
-//     alt: "Fresh crystal water stream running through forest"
-//   },
-//   {
-//     id: "g8",
-//     title: "Farm-Fresh Kerala Breakfast",
-//     category: "dining",
-//     image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1200&q=85",
-//     caption: "Freshly prepared breakfast spread including local spices, fruits, and hot Wayanad estate coffee.",
-//     alt: "Traditional organic breakfast table spread"
-//   }
-// ];
 
 export const TESTIMONIALS = [
   {
     id: "t1",
     author: "Arjun & Sneha Nair",
     location: "Bangalore",
-    stayedIn: "Stream Side A-Frame 4BHK Villa",
+    stayedIn: "Stream Side A-Framedd 4BHK Villas",
     rating: 5,
-    text: "We booked the entire A-frame villa for a family reunion. The sound of the stream running right behind the rooms is pure magic. The kids loved the bunk bed in the wooden attic, and the campfire with BBQ under the misty Lakkidi sky was unforgettable."
+    text: "We booked the entire A-Framedd Villas for a family reunion. The sound of the stream running right behind the rooms is pure magic. The kids loved the bunk bed in the wooden attic, and the campfire with BBQ under the misty Lakkidi sky was unforgettable."
   },
   {
     id: "t2",

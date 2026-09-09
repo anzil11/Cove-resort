@@ -16,7 +16,7 @@ export const RoomsSection: React.FC<RoomsSectionProps> = ({
   onSelectRoom,
   onBookNow
 }) => {
-  const [selectedFilter, setSelectedFilter] = useState<'all' | 'premium-ac' | 'streamside-ac' | 'streamside-non-ac' | 'entire-villa'>('all');
+  const [selectedFilter, setSelectedFilter] = useState<'all' | 'premium-ac' | 'streamside-ac' | 'streamside-non-ac' | 'entire-Villas'>('all');
   const [showComparison, setShowComparison] = useState<boolean>(false);
 
   const filteredRooms = ROOMS_DATA.filter((room) => {
@@ -34,7 +34,7 @@ export const RoomsSection: React.FC<RoomsSectionProps> = ({
               Sanctuary Accommodations
             </span>
             <h2 className="font-display text-3xl sm:text-5xl md:text-6xl text-[#1b1c1b] font-normal leading-tight">
-              Suites &amp; A-Frame Villa
+              Suites &amp; A-Framedd Villas
             </h2>
             <p className="font-sans-ui text-sm sm:text-base text-[#5f5e5b] mt-4 font-light leading-relaxed">
               Every wooden room and suite at The Cove Lakkidi is positioned in harmony with the natural flowing stream, equipped with natural pine architecture, mountain breezes, and quiet luxury.
@@ -95,14 +95,14 @@ export const RoomsSection: React.FC<RoomsSectionProps> = ({
             Stream Side Non-A/C
           </button>
           <button
-            onClick={() => setSelectedFilter('entire-villa')}
+            onClick={() => setSelectedFilter('entire-Villas')}
             className={`px-5 py-2.5 text-xs font-sans-ui uppercase tracking-wider font-semibold transition-all whitespace-nowrap cursor-pointer ${
-              selectedFilter === 'entire-villa'
+              selectedFilter === 'entire-Villas'
                 ? 'bg-[#000101] text-[#ffffff]'
                 : 'bg-[#ffffff] text-[#5f5e5b] border border-[#e4e2e0] hover:text-[#1b1c1b]'
             }`}
           >
-            Exclusive 04 BHK Villa
+            Exclusive 04 BHK Villas
           </button>
         </div>
 

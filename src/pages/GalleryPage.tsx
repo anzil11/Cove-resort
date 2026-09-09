@@ -10,8 +10,8 @@ import {
   Sparkles,
   Camera,
   ArrowRight,
-  Bed,
-  Phone
+  Download,
+  BookOpen
 } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { GALLERY_ITEMS, RESORT_INFO } from '../data/resortData';
@@ -21,18 +21,20 @@ import { generateWhatsAppLink } from '../utils/helpers';
 interface GalleryPageProps {
   onNavigate: (page: PageId) => void;
   onOpenBooking: () => void;
+  onOpenBrochure: () => void;
 }
 
 export const GalleryPage: React.FC<GalleryPageProps> = ({
   onNavigate,
-  onOpenBooking
+  onOpenBooking,
+  onOpenBrochure
 }) => {
   const [activeCategory, setActiveCategory] = useState<string>('all');
   const [activeImageIndex, setActiveImageIndex] = useState<number | null>(null);
 
   const categories = [
     { id: 'all', label: `All Photos (${GALLERY_ITEMS.length})` },
-    { id: 'villa', label: 'A-Frame Villa' },
+    { id: 'Villas', label: 'A-Framedd Villas' },
     { id: 'rooms', label: 'Suites & Interiors' },
     { id: 'stream', label: 'Attached Stream' },
     { id: 'dining', label: 'Experiences & Campfire' },
@@ -92,7 +94,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
           </h1>
 
           <p className="font-sans-ui text-sm sm:text-base md:text-lg text-[#d0d0d4] max-w-2xl mx-auto mt-4 font-light leading-relaxed">
-            Explore authentic photographs of our A-frame villa, pine wooden bedroom interiors, attached mountain stream, and starlit campfire evenings.
+            Explore authentic photographs of our A-Framedd Villas, pine wooden bedroom interiors, attached mountain stream, and starlit campfire evenings.
           </p>
 
           <div className="flex items-center justify-center gap-2 font-sans-ui text-xs text-[#ffe088] mt-6 tracking-widest uppercase">
@@ -166,15 +168,15 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
 
                     {/* Caption on Hover */}
                     <div className="absolute bottom-3 left-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-[#ffffff]">
-                      {/* <h3 className="font-display text-base font-semibold leading-tight">{item.title}</h3> */}
+                      <h3 className="font-display text-base font-semibold leading-tight">{item.title}</h3>
                       <p className="font-sans-ui text-[11px] text-[#e5e2dd] mt-1 line-clamp-1">{item.caption}</p>
                     </div>
                   </div>
 
                   <div className="p-4 bg-[#ffffff]">
-                    {/* <h3 className="font-display text-base text-[#1b1c1b] group-hover:text-[#735c00] transition-colors">
+                    <h3 className="font-display text-base text-[#1b1c1b] group-hover:text-[#735c00] transition-colors">
                       {item.title}
-                    </h3> */}
+                    </h3>
                     <p className="font-sans-ui text-xs text-[#5f5e5b] mt-1 line-clamp-2">
                       {item.caption}
                     </p>
@@ -272,7 +274,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
 
             {/* Bottom Caption Bar */}
             <div className="max-w-2xl mx-auto text-center text-[#ffffff]">
-              {/* <h3 className="font-display text-xl text-[#ffe088]">{currentLightboxItem.title}</h3> */}
+              <h3 className="font-display text-xl text-[#ffe088]">{currentLightboxItem.title}</h3>
               <p className="font-sans-ui text-xs sm:text-sm text-[#c5c6ca] mt-1 font-light">
                 {currentLightboxItem.caption}
               </p>
@@ -281,33 +283,33 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
         )}
       </AnimatePresence>
 
-      {/* Bottom Reservation Callout */}
+      {/* Bottom Brochure Callout */}
       <section className="py-16 bg-[#000101] text-[#ffffff] border-t border-[#30302f]">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
             <span className="text-[11px] font-sans-ui uppercase tracking-[0.25em] text-[#ffe088] font-semibold block">
-              Private Mountain Sanctuary
+              Official Literature
             </span>
             <h3 className="font-display text-2xl sm:text-4xl text-[#ffffff] mt-1">
-              Ready to Experience The Cove Lakkidi?
+              Download The Cove Lakkidi Brochure
             </h3>
             <p className="font-sans-ui text-xs sm:text-sm text-[#c5c6ca] mt-2 max-w-xl font-light">
-              Reserve your wooden suite or the entire 4-bedroom villa with private attached stream bathing, campfire gatherings, and complimentary breakfast.
+              Access the complete printable PDF containing all suite blueprints, stream features, full tariff breakdowns, and the 26 nearby attraction index.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-4">
             <button
-              onClick={() => onNavigate('rooms')}
-              className="px-6 py-3.5 bg-[#ffffff] text-[#000101] text-xs font-sans-ui font-semibold uppercase tracking-widest hover:bg-[#ffe088] transition-all flex items-center gap-2 cursor-pointer"
+              onClick={onOpenBrochure}
+              className="px-6 py-3.5 bg-[#ffffff] text-[#000101] text-xs font-sans-ui font-semibold uppercase tracking-widest hover:bg-[#ffe088] transition-all flex items-center gap-2"
             >
-              <Bed className="w-4 h-4 text-[#735c00]" />
-              <span>Explore All Rooms</span>
+              <BookOpen className="w-4 h-4 text-[#735c00]" />
+              <span>Open PDF Brochure</span>
             </button>
 
             <button
               onClick={onOpenBooking}
-              className="px-6 py-3.5 bg-[#25D366] text-[#ffffff] text-xs font-sans-ui font-semibold uppercase tracking-wider hover:bg-[#20bd5a] transition-all flex items-center gap-2 cursor-pointer"
+              className="px-6 py-3.5 bg-[#25D366] text-[#ffffff] text-xs font-sans-ui font-semibold uppercase tracking-wider hover:bg-[#20bd5a] transition-all flex items-center gap-2"
             >
               <MessageSquare className="w-4 h-4" />
               <span>Book Your Suite</span>

@@ -122,7 +122,7 @@ export const BookingCalculatorModal: React.FC<BookingCalculatorModalProps> = ({
               {/* Room Selection */}
               <div>
                 <label className="block text-xs font-sans-ui uppercase tracking-wider text-[#5f5e5b] font-semibold mb-2">
-                  Select Room / Villa Category
+                  Select Room / Villas Category
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {ROOMS_DATA.map((r) => {
@@ -332,9 +332,9 @@ export const BookingCalculatorModal: React.FC<BookingCalculatorModalProps> = ({
                     {formatCurrency(totalAmount, currency)}
                   </span>
                 </div>
-                <div className="text-[10px] text-[#75777a]">
-                  *Includes complimentary breakfast, welcome drinks, Wi-Fi, and attached stream access.
-                </div>
+                {/* <div className="text-[10px] text-[#75777a]">
+                  *Includes Complimentary Breakfast(on-request), welcome drinks, Wi-Fi, and attached stream access.
+                </div> */}
               </div>
 
               {/* Action */}

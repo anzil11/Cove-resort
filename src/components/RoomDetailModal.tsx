@@ -119,7 +119,7 @@ export const RoomDetailModal: React.FC<RoomDetailModalProps> = ({
               {/* Title & Tagline */}
               <div>
                 <p className="font-sans-ui text-xs text-[#735c00] font-semibold uppercase tracking-[0.25em] mb-3">
-                  {room.isEntireVilla ? 'Full Villa Sanctuary' : 'Signature Wooden Suite'}
+                  {room.isEntireVillas ? 'Full Villas Sanctuary' : 'Signature Wooden Suite'}
                 </p>
                 <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl text-[#1b1c1b] mb-4 leading-tight">
                   {room.name}
@@ -134,8 +134,8 @@ export const RoomDetailModal: React.FC<RoomDetailModalProps> = ({
               {/* Architectural Details Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 font-sans-ui">
                 <div className="bg-[#f5f3f1] p-4 border border-[#e4e2e0]">
-                  <span className="block text-[#5f5e5b] text-xs uppercase tracking-wider mb-1">Climate</span>
-                  <span className="font-display text-base font-semibold text-[#1b1c1b]">{room.acType}</span>
+                  <span className="block text-[#5f5e5b] text-xs uppercase tracking-wider mb-1">Space</span>
+                  <span className="font-display text-base font-semibold text-[#1b1c1b]">{room.space}</span>
                 </div>
                 <div className="bg-[#f5f3f1] p-4 border border-[#e4e2e0]">
                   <span className="block text-[#5f5e5b] text-xs uppercase tracking-wider mb-1">Capacity</span>

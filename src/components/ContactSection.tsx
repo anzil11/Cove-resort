@@ -35,7 +35,7 @@ export const ContactSection: React.FC = () => {
             Connect with The Cove
           </h2>
           <p className="font-sans-ui text-sm sm:text-base text-[#5f5e5b] mt-4 font-light leading-relaxed">
-            Our concierge team is at your service 24/7 to assist with room bookings, exclusive villa buyouts, airport transfers, and customized Wayanad excursions.
+            Our concierge team is at your service 24/7 to assist with room bookings, exclusive Villas buyouts, airport transfers, and customized Wayanad excursions.
           </p>
         </div>
 
@@ -95,10 +95,10 @@ export const ContactSection: React.FC = () => {
                     Sanctuary Location
                   </h4>
                   <p className="text-[#5f5e5b] leading-relaxed">
-                    The Cove Lakkidi Resort, Old Vythiri, Lakkidi, Wayanad District, Kerala 673576, India
+                    The Cove Lakkidi Resort, Lakkidi, Wayanad District, Kerala 673576, India
                   </p>
                   <p className="text-[#735c00] font-medium mt-2">
-                    Landmarks: 200m from Teenzania Park • 500m from Historical Chain Tree • 1.5 Km from Pookode Lake
+                    Landmarks: 200m from Tanzania Park • 500m from Historical Chain Tree • 1.5 Km from Pookode Lake
                   </p>
                 </div>
               </div>

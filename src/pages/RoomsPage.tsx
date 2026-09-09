@@ -47,7 +47,7 @@ export const RoomsPage: React.FC<RoomsPageProps> = ({
     { id: 'premium-ac', label: 'Premium A/C' },
     { id: 'streamside-ac', label: 'Stream Side A/C' },
     { id: 'streamside-non-ac', label: 'Stream Side Non-A/C' },
-    { id: 'entire-villa', label: '4-BHK Villa Buyout' }
+    { id: 'entire-Villas', label: '4-BHK Villas Buyout' }
   ];
 
   const filteredRooms = activeCategory === 'all'
@@ -75,11 +75,11 @@ export const RoomsPage: React.FC<RoomsPageProps> = ({
           </div>
 
           <h1 className="font-display text-4xl sm:text-6xl md:text-7xl font-normal leading-tight text-[#ffffff] max-w-4xl mx-auto">
-            Suites &amp; Private A-Frame Villa
+            Suites &amp; Private A-Framedd Villas
           </h1>
 
           <p className="font-sans-ui text-sm sm:text-base md:text-lg text-[#d0d0d4] max-w-2xl mx-auto mt-4 font-light leading-relaxed">
-            Choose between handcrafted pine timber suites with private forest balconies, stream-side rooms, or an exclusive 4-bedroom villa buyout.
+            Choose between handcrafted pine timber suites with private forest balconies, stream-side rooms, or an exclusive 8-bedroom Villas buyout.
           </p>
 
           {/* Breadcrumb & Currency Switch */}
@@ -142,7 +142,7 @@ export const RoomsPage: React.FC<RoomsPageProps> = ({
               <div className="flex items-start gap-3">
                 <Coffee className="w-5 h-5 text-[#735c00] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-sm text-[#1b1c1b]">Complimentary Breakfast</h4>
+                  <h4 className="font-semibold text-sm text-[#1b1c1b]">Complimentary Breakfast(on-request)</h4>
                   <p className="text-[#5f5e5b] mt-1">Freshly prepared hot Kerala delicacies and fresh fruit platter included every morning.</p>
                 </div>
               </div>
@@ -176,7 +176,7 @@ export const RoomsPage: React.FC<RoomsPageProps> = ({
       </section>
 
       {/* Accommodation Comparison Table */}
-      {/* <section className="py-20 md:py-24 bg-[#f5f3f1] border-t border-[#e4e2e0]">
+      <section className="py-20 md:py-24 bg-[#f5f3f1] border-t border-[#e4e2e0]">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="font-sans-ui text-xs uppercase tracking-[0.25em] text-[#735c00] font-semibold block mb-2">
@@ -192,7 +192,7 @@ export const RoomsPage: React.FC<RoomsPageProps> = ({
               <thead>
                 <tr className="bg-[#1b1c1b] text-[#ffffff] border-b border-[#30302f]">
                   <th className="p-4 font-semibold uppercase tracking-wider">Accommodation</th>
-                  <th className="p-4 font-semibold uppercase tracking-wider">View / Surroundings</th>
+                  <th className="p-4 font-semibold uppercase tracking-wider">Space</th>
                   <th className="p-4 font-semibold uppercase tracking-wider">Capacity</th>
                   <th className="p-4 font-semibold uppercase tracking-wider">Climate</th>
                   <th className="p-4 font-semibold uppercase tracking-wider">Balcony</th>
@@ -207,7 +207,7 @@ export const RoomsPage: React.FC<RoomsPageProps> = ({
                     <td className="p-4 font-display text-sm font-semibold text-[#1b1c1b] hover:text-[#735c00]">
                       {r.name}
                     </td>
-                    <td className="p-4 text-[#5f5e5b]">{r.view}</td>
+                    <td className="p-4 text-[#5f5e5b]">{r.space}</td>
                     <td className="p-4 text-[#5f5e5b]">{r.capacity}</td>
                     <td className="p-4">
                       <span className={`px-2 py-0.5 text-[10px] font-bold ${
@@ -255,10 +255,10 @@ export const RoomsPage: React.FC<RoomsPageProps> = ({
             </table>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Policies & FAQ */}
-      {/* <section className="py-20 md:py-24 bg-[#fbf9f7]">
+      <section className="py-20 md:py-24 bg-[#fbf9f7]">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12">
           <div className="max-w-3xl mx-auto space-y-6">
             <div className="text-center mb-8">
@@ -275,10 +275,10 @@ export const RoomsPage: React.FC<RoomsPageProps> = ({
                 <span className="font-semibold text-[#1b1c1b]">Check-In / Check-Out</span>
                 <span>Check-in: 02:00 PM • Check-out: 11:00 AM (Early check-in subject to availability)</span>
               </div>
-              <div className="flex justify-between pb-3 border-b border-[#e4e2e0]">
-                <span className="font-semibold text-[#1b1c1b]">Complimentary Breakfast</span>
+              {/* <div className="flex justify-between pb-3 border-b border-[#e4e2e0]">
+                <span className="font-semibold text-[#1b1c1b]">Complimentary Breakfast(on-request)</span>
                 <span>Served hot between 08:00 AM – 10:30 AM in the stream-side patio or room</span>
-              </div>
+              </div> */}
               <div className="flex justify-between pb-3 border-b border-[#e4e2e0]">
                 <span className="font-semibold text-[#1b1c1b]">Pet Policy</span>
                 <span>100% Pet friendly property. Please inform concierge at time of booking.</span>
@@ -294,7 +294,7 @@ export const RoomsPage: React.FC<RoomsPageProps> = ({
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 };

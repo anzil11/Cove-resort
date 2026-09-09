@@ -429,7 +429,7 @@ export const NearbyPage: React.FC<NearbyPageProps> = ({
                   <div className="flex gap-4">
                     <span className="font-bold text-[#735c00] w-20 flex-shrink-0">10:00 AM</span>
                     <div>
-                      <strong className="text-[#1b1c1b]">Teenzania Park &amp; Chain Tree (200m - 500m):</strong> Walk to the historic Chain Tree to discover the legend of Karinthandan and explore Tanzania Park.
+                      <strong className="text-[#1b1c1b]">Tanzania Park &amp; Chain Tree (200m - 500m):</strong> Walk to the historic Chain Tree to discover the legend of Karinthandan and explore Tanzania Park.
                     </div>
                   </div>
                   <div className="flex gap-4">
@@ -441,7 +441,7 @@ export const NearbyPage: React.FC<NearbyPageProps> = ({
                   <div className="flex gap-4">
                     <span className="font-bold text-[#735c00] w-20 flex-shrink-0">02:30 PM</span>
                     <div>
-                      <strong className="text-[#1b1c1b]">En Ooru Tribal Heritage Village (3.5 Km):</strong> Experience authentic indigenous tribal architecture, traditional handicrafts, and local cuisines.
+                      <strong className="text-[#1b1c1b]">En Ooru Tribal Heritage Villasge (3.5 Km):</strong> Experience authentic indigenous tribal architecture, traditional handicrafts, and local cuisines.
                     </div>
                   </div>
                   <div className="flex gap-4">

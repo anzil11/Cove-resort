@@ -1,6 +1,6 @@
 {
   "name": "The Cove Lakkidi Resort",
-  "description": "Luxury stream side A-frame villa and wooden suites in Lakkidi, Wayanad with quiet luxury aesthetic, direct stream access, and interactive travel guide.",
+  "description": "Luxury stream side A-Framedd Villas and wooden suites in Lakkidi, Wayanad with quiet luxury aesthetic, direct stream access, and interactive travel guide.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

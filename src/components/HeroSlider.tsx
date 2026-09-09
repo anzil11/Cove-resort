@@ -126,12 +126,12 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12 w-full pt-4 flex justify-between items-center">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#fbf9f7]/15 backdrop-blur-md border border-[#ffffff]/20 text-[#ffffff] text-xs font-sans-ui tracking-widest uppercase">
           <MapPin className="w-3.5 h-3.5 text-[#ffe088]" />
-          <span>Old Vythiri, Lakkidi • 700m Altitude</span>
+          <span>Lakkidi • 700m Altitude</span>
         </div>
 
         <div className="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#fbf9f7]/15 backdrop-blur-md border border-[#ffffff]/20 text-[#ffffff] text-xs font-sans-ui tracking-widest uppercase">
           <Waves className="w-3.5 h-3.5 text-[#ffe088]" />
-          <span>Attached Natural Stream Bathing</span>
+          <span>Natural Stream Bathing</span>
         </div>
       </div>
 
@@ -317,7 +317,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
                   <option value={4}>4 Guests</option>
                   <option value={6}>6 Guests</option>
                   <option value={8}>8 Guests</option>
-                  <option value={12}>12+ (Entire Villa)</option>
+                  <option value={12}>12+ (Entire Villas)</option>
                 </select>
                 <span className="text-xs font-serif text-[#735c00] font-bold">
                   {formatCurrency(currentRoom.priceINR, currency)}
@@ -337,10 +337,10 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
 
           {/* Quick Perks Ticker */}
           <div className="mt-4 pt-3 border-t border-[#e4e2e0] flex flex-wrap items-center justify-between gap-y-2 text-[11px] font-sans-ui text-[#5f5e5b]">
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#735c00]" />
-              <span>Complimentary Breakfast &amp; Welcome Refreshment</span>
-            </div>
+              <span>Complimentary Breakfast(on-request) &amp; Welcome Refreshment</span>
+            </div> */}
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#735c00]" />
               <span>Direct Natural Stream Access &amp; Pet Friendly</span>

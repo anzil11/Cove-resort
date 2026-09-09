@@ -21,12 +21,13 @@ import { SEO } from '../components/SEO';
 import { ROOMS_DATA, ATTRACTIONS_DATA, GALLERY_ITEMS, TESTIMONIALS, RESORT_INFO } from '../data/resortData';
 import { Room, PageId } from '../types';
 import { generateWhatsAppLink, formatCurrency } from '../utils/helpers';
-import coveAframeTwilight from '../assets/images/other/WhatsApp Image 2026-07-14 at 19.29.53.jpeg';
+import coveAframeTwilight from '../assets/images/cove_aframe_twilight_1786990321192.jpg';
 
 interface HomePageProps {
   onNavigate: (page: PageId) => void;
   onSelectRoom: (room: Room) => void;
   onBookNow: (room?: Room) => void;
+  onOpenBrochure: () => void;
   currency: 'INR' | 'USD';
 }
 
@@ -34,6 +35,7 @@ export const HomePage: React.FC<HomePageProps> = ({
   onNavigate,
   onSelectRoom,
   onBookNow,
+  onOpenBrochure,
   currency
 }) => {
   const featuredRooms = ROOMS_DATA.slice(0, 3);
@@ -64,10 +66,10 @@ export const HomePage: React.FC<HomePageProps> = ({
                 Where Living Waters Meet Handcrafted Pine Timber
               </h2>
               <p className="font-sans-ui text-sm sm:text-base text-[#5f5e5b] leading-relaxed font-light">
-                Perched 700 meters above sea level in Old Vythiri, The Cove Lakkidi is a quiet luxury hideaway enveloped by evergreen rainforest mist. Our iconic A-frame architecture harmonizes natural mountain stone, treated aromatic pine timber, and the perpetual, soothing song of our attached mountain stream.
+                Perched 700 meters above sea level in Lakkidi The Cove Lakkidi is a quiet luxury hideaway enveloped by evergreen rainforest mist. Our iconic A-Framedd architecture harmonizes natural mountain stone, treated aromatic pine timber, and the perpetual, soothing song of our attached mountain stream.
               </p>
               <p className="font-sans-ui text-sm sm:text-base text-[#5f5e5b] leading-relaxed font-light">
-                Whether you choose an intimate wooden attic suite with a private teak balcony and bunk bed or reserve the entire 4-bedroom villa exclusively, your stay is surrounded by pure air, starlit campfire evenings, and true Malabar warmth.
+                Whether you choose an intimate wooden attic suite with a private teak balcony and bunk bed or reserve the entire 8-bedroom Villas exclusively, your stay is surrounded by pure air, starlit campfire evenings, and true Malabar warmth.
               </p>
 
               {/* Badges Grid */}
@@ -80,7 +82,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
                 <div className="p-3 bg-[#ffffff] border border-[#e4e2e0]">
                   <div className="font-display text-2xl font-bold text-[#1b1c1b]">4-BHK</div>
-                  <div className="text-[#735c00] text-[11px] font-semibold mt-0.5">Private Villa</div>
+                  <div className="text-[#735c00] text-[11px] font-semibold mt-0.5">Private Villas</div>
                   <div className="text-[#5f5e5b] text-[10px]">Full Estate Buyout</div>
                 </div>
 
@@ -101,11 +103,11 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </button>
 
                 <button
-                  onClick={() => onNavigate('rooms')}
-                  className="px-6 py-3 bg-[#ffffff] border border-[#e4e2e0] text-[#1b1c1b] text-xs font-sans-ui font-semibold uppercase tracking-widest hover:bg-[#f5f3f1] transition-all flex items-center gap-2 cursor-pointer"
+                  onClick={onOpenBrochure}
+                  className="px-6 py-3 bg-[#ffffff] border border-[#e4e2e0] text-[#1b1c1b] text-xs font-sans-ui font-semibold uppercase tracking-widest hover:bg-[#f5f3f1] transition-all flex items-center gap-2"
                 >
-                  <Bed className="w-3.5 h-3.5 text-[#735c00]" />
-                  <span>Browse Accommodations</span>
+                  <BookOpen className="w-3.5 h-3.5 text-[#735c00]" />
+                  <span>View Official PDF</span>
                 </button>
               </div>
             </div>
@@ -115,7 +117,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               <div className="aspect-[4/3] sm:aspect-[16/11] overflow-hidden border border-[#e4e2e0] ambient-shadow">
                 <img
                   src={coveAframeTwilight}
-                  alt="A-Frame Architecture in Nature at The Cove Lakkidi"
+                  alt="A-Framedd Architecture in Nature at The Cove Lakkidi"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
                   referrerPolicy="no-referrer"
                 />
@@ -126,7 +128,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   &ldquo;A tranquil haven where the gentle rhythm of running water guides every morning.&rdquo;
                 </p>
                 <div className="font-sans-ui text-[10px] uppercase tracking-widest text-[#735c00] font-bold mt-2">
-                  Old Vythiri • The Cove
+                  Vythiri • The Cove
                 </div>
               </div>
             </div>
@@ -134,7 +136,7 @@ export const HomePage: React.FC<HomePageProps> = ({
         </div>
       </section>
 
-      {/* Section 2: Featured Suites & Villa Showcase */}
+      {/* Section 2: Featured Suites & Villas Showcase */}
       <section className="py-20 md:py-28 bg-[#f5f3f1]">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
@@ -143,7 +145,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 Accommodations
               </span>
               <h2 className="font-display text-3xl sm:text-5xl text-[#1b1c1b]">
-                Signature Suites &amp; Villa
+                Signature Suites &amp; Villas
               </h2>
             </div>
 

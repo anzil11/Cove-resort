@@ -16,10 +16,10 @@ export const ResortHeritageSection: React.FC = () => {
               A Quiet Dialogue Between Architecture and Wilderness
             </h2>
             <p className="font-sans-ui text-sm sm:text-base text-[#5f5e5b] leading-relaxed font-light">
-              Built at 700 meters above sea level in Old Vythiri, The Cove Lakkidi was conceived not as an intrusion into nature, but as an organic extension of the misty rainforest canopy.
+              Built at 700 meters above sea level  The Cove Lakkidi was conceived not as an intrusion into nature, but as an organic extension of the misty rainforest canopy.
             </p>
             <p className="font-sans-ui text-sm sm:text-base text-[#5f5e5b] leading-relaxed font-light">
-              Using locally sourced treated pine timber, natural stone paving, and steeply pitched A-frame rooflines designed to handle Wayanad’s torrential monsoon downpours, the estate preserves the delicate microclimate and natural stream corridor.
+              Using locally sourced treated pine timber, natural stone paving, and steeply pitched A-Framedd rooflines designed to handle Wayanad’s torrential monsoon downpours, the estate preserves the delicate microclimate and natural stream corridor.
             </p>
 
             <div className="pt-4 grid grid-cols-2 gap-6 font-sans-ui text-xs">

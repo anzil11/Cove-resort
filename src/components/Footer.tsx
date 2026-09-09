@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Phone, MessageSquare, MapPin, Heart } from 'lucide-react';
+import { ArrowUp, Phone, MessageSquare, BookOpen, MapPin, Heart } from 'lucide-react';
 import { RESORT_INFO, ROOMS_DATA } from '../data/resortData';
 import { generateWhatsAppLink } from '../utils/helpers';
 import { PageId, Room } from '../types';
@@ -7,12 +7,14 @@ import { PageId, Room } from '../types';
 interface FooterProps {
   onNavigate: (page: PageId) => void;
   onSelectRoom?: (room: Room) => void;
+  onOpenBrochure: () => void;
   onOpenBooking: () => void;
 }
 
 export const Footer: React.FC<FooterProps> = ({
   onNavigate,
   onSelectRoom,
+  onOpenBrochure,
   onOpenBooking
 }) => {
   const scrollToTop = () => {
@@ -39,7 +41,7 @@ export const Footer: React.FC<FooterProps> = ({
               THE COVE LAKKIDI
             </div>
             <p className="font-sans-ui text-xs text-[#9fa0a4] max-w-sm leading-relaxed">
-              Stream Side A-Frame 04 Bedroom Private Villa and Luxury Wooden Suites in Lakkidi, Wayanad. An untamed mountain sanctuary with attached natural stream bathing and campfire hospitality.
+              Stream Side A-Framedd 04 Bedroom Private Villas and Luxury Wooden Suites in Lakkidi, Wayanad. An untamed mountain sanctuary with Natural Stream Bathing and campfire hospitality.
             </p>
             <div className="pt-2 flex items-center gap-3">
               <a
@@ -60,6 +62,13 @@ export const Footer: React.FC<FooterProps> = ({
               >
                 <Phone className="w-4 h-4" />
               </a>
+              <button
+                onClick={onOpenBrochure}
+                className="p-2.5 bg-[#30302f] hover:bg-[#ffe088] hover:text-[#000101] text-[#ffffff] transition-colors rounded-none cursor-pointer"
+                title="Open PDF Brochure"
+              >
+                <BookOpen className="w-4 h-4" />
+              </button>
             </div>
           </div>
 
@@ -90,7 +99,7 @@ export const Footer: React.FC<FooterProps> = ({
                   onClick={() => onNavigate('rooms')}
                   className="hover:text-[#ffffff] transition-colors text-left cursor-pointer"
                 >
-                  Suites &amp; A-Frame Villa
+                  Suites &amp; A-Framedd Villas
                 </button>
               </li>
               <li>
@@ -121,7 +130,7 @@ export const Footer: React.FC<FooterProps> = ({
             </ul>
           </div>
 
-          {/* Suites & Villa Quick Links */}
+          {/* Suites & Villas Quick Links */}
           <div className="font-sans-ui text-xs space-y-3">
             <h4 className="font-semibold uppercase tracking-widest text-[#ffe088] text-[11px] mb-4">
               Accommodations
@@ -161,10 +170,10 @@ export const Footer: React.FC<FooterProps> = ({
               </li>
               <li>
                 <button
-                  onClick={() => handleRoomClick('entire-4bhk-private-villa')}
+                  onClick={() => handleRoomClick('entire-4bhk-private-Villas')}
                   className="hover:text-[#ffe088] transition-colors text-left font-medium cursor-pointer"
                 >
-                  Exclusive 4-BHK Villa Buyout
+                  Exclusive 4-BHK Villas Buyout
                 </button>
               </li>
             </ul>
@@ -176,7 +185,7 @@ export const Footer: React.FC<FooterProps> = ({
               Sanctuary Desk
             </h4>
             <p className="text-[#c5c6ca] leading-relaxed">
-              Old Vythiri, Lakkidi,<br />
+               Lakkidi,<br />
               Wayanad, Kerala 673576
             </p>
             <p className="text-[#ffe088] font-semibold text-sm">
@@ -197,10 +206,10 @@ export const Footer: React.FC<FooterProps> = ({
 
           <div className="flex items-center gap-6">
             <button
-              onClick={() => onNavigate('rooms')}
+              onClick={onOpenBrochure}
               className="hover:text-[#ffffff] transition-colors cursor-pointer"
             >
-              Suites &amp; Tariffs
+              PDF Guide
             </button>
             <button
               onClick={onOpenBooking}

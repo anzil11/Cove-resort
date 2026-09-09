@@ -15,11 +15,11 @@ export interface Room {
   id: string;
   name: string;
   tagline: string;
-  category: 'premium-ac' | 'streamside-ac' | 'streamside-non-ac' | 'entire-villa';
+  category: 'premium-ac' | 'streamside-ac' | 'streamside-non-ac' | 'entire-Villas';
   priceINR: number;
   priceUSD: number;
   originalPriceINR?: number;
-  space?: string;
+  space: string;
   capacity: string;
   bed: string;
   view: string;
@@ -40,7 +40,7 @@ export interface Room {
   hasBalcony: boolean;
   hasBunkBed: boolean;
   hasStreamView: boolean;
-  isEntireVilla?: boolean;
+  isEntireVillas?: boolean;
 }
 
 export interface Attraction {
@@ -60,9 +60,7 @@ export interface Attraction {
 export interface GalleryItem {
   id: string;
   title: string;
-  category: 'villa' | 'pool' | 'nature';
-
-  // category: 'villa' | 'rooms' | 'stream' | 'dining' | 'nature';
+  category: 'Villas' | 'rooms' | 'stream' | 'dining' | 'nature';
   image: string;
   caption: string;
   alt: string;
