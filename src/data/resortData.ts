@@ -6,6 +6,27 @@ import coveAerialNight from '../assets/images/cove_aerial_night_1786990367663.jp
 import starlitCampfireDeck from '../assets/images/starlit_campfire_deck_1786990379705.jpg';
 import wayanadSunsetHills from '../assets/images/wayanad_sunset_hills_1786990394925.jpg';
 
+// Real Room Images - Premium A/C Wooden Room with Attached Balcony & Bunk Bed
+import bunkBedRoomPrimary from '../assets/premium Ac wooden room with attached balcony and bunk bed room/WhatsApp Image 2026-08-18 at 12.48.31.jpeg';
+import bunkBedRoomBalconySeating from '../assets/premium Ac wooden room with attached balcony and bunk bed room/WhatsApp Image 2026-08-18 at 12.48.48.jpeg';
+import bunkBedRoomAframeExterior from '../assets/premium Ac wooden room with attached balcony and bunk bed room/WhatsApp Image 2026-08-18 at 12.48.31 (1).jpeg';
+
+// Real Room Images - Premium A/C Wooden Room
+import premiumAcRoomBedSkylight from '../assets/premium Ac wooden room/WhatsApp Image 2026-08-18 at 12.49.43 (1).jpeg';
+import premiumAcRoomWarmGreen from '../assets/premium Ac wooden room/WhatsApp Image 2026-08-18 at 12.49.42.jpeg';
+import premiumAcRoomTvLounge from '../assets/premium Ac wooden room/WhatsApp Image 2026-08-18 at 12.49.43.jpeg';
+import premiumAcRoomBenchAngle from '../assets/premium Ac wooden room/WhatsApp Image 2026-08-18 at 12.49.43 (2).jpeg';
+
+// Real Room Images - A/C Wooden Room with Attached Balcony
+import acBalconyRoomBedLoft from '../assets/AC Wooden Room with Attached Balcony/WhatsApp Image 2026-08-18 at 12.50.40.jpeg';
+import acBalconyRoomLoftLadder from '../assets/AC Wooden Room with Attached Balcony/WhatsApp Image 2026-08-18 at 12.50.39.jpeg';
+import acBalconyRoomNightExterior from '../assets/AC Wooden Room with Attached Balcony/WhatsApp Image 2026-08-18 at 12.50.39 (1).jpeg';
+
+// Real Room Images - Stream Side Non-A/C Deluxe Room
+import streamSideDeluxeDeskBed from '../assets/Stream Side Non-AC Deluxe Room/WhatsApp Image 2026-08-18 at 12.51.24.jpeg';
+import streamSideDeluxeSeating from '../assets/Stream Side Non-AC Deluxe Room/WhatsApp Image 2026-08-18 at 12.51.23.jpeg';
+import streamSideTwinCottagesMisty from '../assets/Stream Side Non-AC Deluxe Room/WhatsApp Image 2026-08-18 at 17.36.54.jpeg';
+
 export const RESORT_INFO = {
   name: "THE COVE LAKKIDI",
   tagline: "Resorts & Nature Sanctuary",
@@ -42,7 +63,7 @@ export const HERO_SLIDES: HeroSlide[] = [
   },
   {
     id: "slide-3",
-    image: bunkBedSuite,
+    image: bunkBedRoomPrimary,
     tagline: "Handcrafted Pine Timber Suites",
     title: "Warm Amber Comforts.",
     highlight: "Attic Balconies & Bunk Beds",
@@ -82,10 +103,9 @@ export const ROOMS_DATA: Room[] = [
     description: "Crafted entirely with natural aromatic pine timber, this high-ceiling A-Framedd suite features an elevated bunk bed for kids or travel companions and an attached open-air teak balcony overlooking misty greenery.",
     fullDescription: "Perched within the upper level of the iconic A-Framedd architecture, this suite is our crown jewel for families and small groups. Breathe in the subtle cedar aroma as natural morning light filters through pitched triangular glass panes. Step out onto your private wooden balcony with fresh estate-brewed tea, or relax in the climate-controlled comfort after a day wandering the Lakkidi streams.",
     images: [
-      bunkBedSuite,
-      pineBedroomBalcony,
-      coveAframeTwilight,
-      coveAerialNight
+      bunkBedRoomPrimary,
+      bunkBedRoomBalconySeating,
+      bunkBedRoomAframeExterior
     ],
     keyHighlights: [
       "Attached Private Timber Balcony with Valley View",
@@ -154,9 +174,10 @@ export const ROOMS_DATA: Room[] = [
     description: "An intimate, all-wood sanctuary with warm amber lighting and floor-to-ceiling forest vistas. Designed for couples seeking peace, privacy, and quiet luxury in Wayanad.",
     fullDescription: "Immerse yourself in rich polished wood panelling, gentle forest sounds, and refined comforts. The room features a handcrafted King bed, soft ambient lighting, modern split air-conditioning, and an ensuite modern bathroom with 24/7 hot water sourced from mountain springs.",
     images: [
-      pineBedroomBalcony,
-      bunkBedSuite,
-      coveAframeTwilight
+      premiumAcRoomBedSkylight,
+      premiumAcRoomWarmGreen,
+      premiumAcRoomTvLounge,
+      premiumAcRoomBenchAngle
     ],
     keyHighlights: [
       "All-natural polished wood interiors",
@@ -208,7 +229,7 @@ export const ROOMS_DATA: Room[] = [
   },
   {
     id: "streamside-ac-wooden-balcony",
-    name: " A/C Wooden Room with Attached Balcony",
+    name: "A/C Wooden Room with Attached Balcony",
     tagline: "Waterfront Serenity with Private Rushing Stream Deck",
     category: "streamside-ac",
     priceINR: 5200,
@@ -225,9 +246,9 @@ export const ROOMS_DATA: Room[] = [
     description: "Positioned directly above the crystal-clear mountain stream, this room allows you to fall asleep to the hypnotic melody of running water and wake up to emerald forest canopy views.",
     fullDescription: "Step through wide glass doors straight onto your private overwater balcony. Watch the cool mountain stream meander beneath pebble banks while sipping your morning filter coffee. Complete with split air conditioning, warm wooden architecture, comfortable seating, and immediate access to the natural stream bathing pools.",
     images: [
-      pineBedroomBalcony,
-      coveAerialNight,
-      starlitCampfireDeck
+      acBalconyRoomBedLoft,
+      acBalconyRoomLoftLadder,
+      acBalconyRoomNightExterior
     ],
     keyHighlights: [
       "Directly overlooks the property's natural flowing stream",
@@ -296,9 +317,9 @@ export const ROOMS_DATA: Room[] = [
     description: "Experience genuine hill station living. Lakkidi's 700m elevation keeps temperatures cool and crisp naturally, while the nearby stream provides refreshing pure air.",
     fullDescription: "Thoughtfully designed for travelers who appreciate natural mountain breezes and sustainable eco-hospitality. Features modern tasteful interiors with leaf-motif headboards, high-speed ceiling fans, wide screened windows for natural airflow, attached bathroom with continuous hot water, and instant stream access.",
     images: [
-      pineBedroomBalcony,
-      bunkBedSuite,
-      wayanadSunsetHills
+      streamSideDeluxeDeskBed,
+      streamSideDeluxeSeating,
+      streamSideTwinCottagesMisty
     ],
     keyHighlights: [
       "Naturally cool year-round climate (18°C - 23°C)",
@@ -368,11 +389,12 @@ export const ROOMS_DATA: Room[] = [
     description: "Reserve the entire iconic A-Framedd property exclusively for your group. 4 full bedrooms, attached natural stream, private campfire courtyard, barbecue station, and dedicated concierge.",
     fullDescription: "The ultimate private vacation in Wayanad. The Cove Lakkidi's full 8-bedroom A-Framedd estate transforms into your private luxury home. Enjoy complete privacy, unhindered stream bathing, starlit evening bonfires, live barbecue grilling on the stone patio, and personalized meals crafted for your group.",
     images: [
-      coveAframeTwilight,
-      coveAerialNight,
-      bunkBedSuite,
-      pineBedroomBalcony,
-      starlitCampfireDeck
+      streamSideTwinCottagesMisty,
+      bunkBedRoomPrimary,
+      premiumAcRoomBedSkylight,
+      acBalconyRoomNightExterior,
+      streamSideDeluxeDeskBed,
+      bunkBedRoomAframeExterior
     ],
     keyHighlights: [
       "100% Exclusive access to all 4 bedrooms & private grounds",
@@ -791,15 +813,15 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "g3",
     title: "Premium A/C Wooden Attic & Bunk Bed Suite",
     category: "rooms",
-    image: bunkBedSuite,
+    image: bunkBedRoomPrimary,
     caption: "High pitched pine roof, modern chandelier, plush King master bed and solid pine loft bunk bed with steel ladder.",
     alt: "Pine wooden bedroom interior with loft bunk bed and chandelier"
   },
   {
     id: "g4",
-    title: "Handcrafted Wooden Balcony Suite",
+    title: "Premium A/C Wooden Room with Skylight",
     category: "rooms",
-    image: pineBedroomBalcony,
+    image: premiumAcRoomBedSkylight,
     caption: "Natural pine wall paneling, skylights, king bed, and glass sliding door leading to private forest sit-out balcony.",
     alt: "Pine wooden room with balcony view and skylights"
   },
